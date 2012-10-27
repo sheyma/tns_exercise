@@ -1,0 +1,8 @@
+*~
+*.aux
+*.log
+*.tex.backup
+
+# built files
+*.dvi
+*.pdf
