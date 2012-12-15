@@ -1,0 +1,57 @@
+% Exercise 10
+
+N1=19;
+R_dark=5;
+R_vis=40; % Hz
+sigma=pi/2;
+r=zeros(1,N1);
+theta_i=zeros(1,N1);
+theta_true=linspace(-pi,pi,100);
+
+
+for i=1:N1
+    theta_i(i)=((2*i-N1-2)/N1)*pi;
+  
+  for j=1:length(theta_true)
+  r(j)=ave_response(theta_i(i), theta_true(j),R_vis,R_dark,sigma);
+   
+  end
+  hold on
+  plot(theta_true,r)
+  hold off
+     
+end
+
+theta_t=0;
+r_t=ave_response(theta_i,theta_t,R_vis,R_dark,sigma);
+x_i=one_response(r_t)
+
+
+figure(2);
+subplot(1,2,1)
+plot(theta_i,r_t,'kx')
+subplot(1,2,2)
+plot(theta_i,x_i,'ro')
+
+
+N2=19;
+aci=zeros(1,N2);
+R=zeros(1,N1);
+
+for k=1:N2
+    theta_k(k)=((2*i-N2-2)/N2)*pi;
+for i=1:N1
+    theta_i(i)=((2*i-N1-2)/N1)*pi;
+  
+  for j=1:length(theta_true)
+  r(j)=ave_response(theta_i(i), theta_true(j),R_vis,R_dark,sigma);
+  cos(theta_i(i)-theta_k(k))*r(j);
+  
+  end
+  figure(3);
+  hold on
+  plot(theta_true,t)
+  hold off
+     
+end
+end
