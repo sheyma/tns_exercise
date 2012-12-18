@@ -2,6 +2,7 @@
 *.aux
 *.log
 *.tex.backup
+Thumbs.db
 
 # built files
 *.dvi
