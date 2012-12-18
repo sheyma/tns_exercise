@@ -1,0 +1,31 @@
+N=10000;
+ss=12;
+ave=zeros(1,ss+1);
+
+for i=0:ss
+    s=zeros(1,N)+ss;
+    r=VisResp(s);
+    ave(i+1)=mean(r);
+    
+        
+end
+
+a=[0 3 12];
+
+ss1=zeros(1,N)+a(1);
+r1=VisResp(s);
+[n1, bin1]=hist(r1,10)
+
+ss2=zeros(1,N)+a(2);
+r2=VisResp(s);
+    
+ss3=zeros(1,N)+a(3);
+r3=VisResp(s);
+
+figure(1);
+plot((0:1:12),ave)
+
+figure(2);
+
+plot(bin,n)
+    

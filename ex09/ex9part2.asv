@@ -1,0 +1,36 @@
+% Presence or Absnce of Light
+
+N=10000;
+a=12;
+s=zeros(1,N)+0;
+s1=zeros(1,N);
+r=VisResp(s);
+theta=8;
+Hon=zeros(1,a+1);
+Hoff=zeros(1,a+1);
+
+for i=0:a
+  r0=VisResp(s);
+  s1=zeros(1,N)+i;
+  r1=VisResp(s1);
+  h=r1>=theta;
+  Hon(i+1)=sum(h)/N; % hit =right alarm
+  k=r0>=theta;
+  Hoff(i+1)=(sum(k))/N; % fake alarm
+    
+end
+
+P=Hon./(Hon+Hoff);
+
+subplot(1,2,1)
+plot([0:1:a],Hon,'--r',[0:1:a],Hoff)
+subplot(1,2,2)
+plot([0:1:a],P)
+ 
+
+
+
+
+
+
+

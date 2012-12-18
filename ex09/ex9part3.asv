@@ -1,0 +1,10 @@
+
+theta=0:1:30;
+
+for i=1:length(theta)
+    [Hon Hoff]=OptDec(theta(i));
+    plot(Hon,Hoff)
+    hold on
+end
+
+
