@@ -1,0 +1,85 @@
+n=50;
+% OnSpot, MysteriousNeuron1
+r1=zeros(1,500);
+S_bar1=zeros(n,n);
+for i=1:500
+    K = OnSpot( n );
+    r1(i)=MysteriousNeuron1(K);
+    S_bar1=S_bar1+K*r1(i);
+end
+
+S_bar1=S_bar1/sum(r1);
+figure;
+subplot(1,2,1)
+pcolor(S_bar1);
+title()
+
+
+
+% OnSpot, MysteriousNeuron2
+r2=zeros(1,500);
+S_bar2=zeros(n,n);
+for i=1:500
+    L = OnSpot( n );
+    r2(i)=MysteriousNeuron2(L);
+    S_bar2=S_bar2+L*r2(i);
+end
+
+S_bar2=S_bar2/sum(r2);
+subplot(1,2,2)
+pcolor(S_bar2);
+title('First Neurom')
+
+% OffSpot, MysteriousNeruron1
+sca_1=zeros(1,500);
+Sit_1=zeros(n,n);
+for i=1:500
+    M=OffSpot(n);
+    sca_1(i)=MysteriousNeuron1(M);
+    Sit_1=Sit_1+M*sca_1(i);
+end
+
+Sit_1=Sit_1/sum(sca_1);
+figure;
+subplot(1,2,1)
+pcolor(Sit_1);
+
+% OffSpot, MysteriousNeruron2
+sca_2=zeros(1,500);
+Sit_2=zeros(n,n);
+for i=1:500
+    N=OffSpot(n);
+    sca_2(i)=MysteriousNeuron2(N);
+    Sit_2=Sit_2+N*sca_2(i);
+end
+Sit_2=Sit_2/sum(sca_2);
+subplot(1,2,2)
+pcolor(Sit_2)
+
+
+% WhiteNoise, MysteriousNeuron1
+r5=zeros(1,500);
+S5=zeros(n,n);
+for i=1:500
+    W=WhiteNoise(n);
+    r5(i)=MysteriousNeuron1(W);
+    S5=S5+W*r5(i);
+end
+S5=S5/sum(r5)
+figure;
+subplot(1,2,1)
+pcolor(S5)
+
+% WhiteNoise, MysteriousNeuron1
+r6=zeros(1,500);
+S6=zeros(n,n);
+for i=1:500
+    W=WhiteNoise(n);
+    r6(i)=MysteriousNeuron1(W);
+    S6=S6+W*r6(i);
+end
+S6=S6/sum(r6);
+subplot(1,2,2)
+pcolor(S6)
+
+
