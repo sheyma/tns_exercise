@@ -1,0 +1,119 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{authblk}
+\usepackage{amsmath}
+
+
+\begin{document}
+
+
+\title{THEORETICAL NEUROSCIENCE II \\ EXERCISE 03}
+\date{28 Apr. 2013}
+\author[1]{Yunus Emre Demiray, Taygun Caglayan, \c{S}eyma Bayrak\thanks{seyma.bayrak@st.ovgu.de}}
+\affil[1]{\footnotesize  Otto von Guericke University of Magdeburg}
+\maketitle
+
+\newpage
+
+\section{Stability Analysis of Fix Points}
+
+The given matrix $\ M= \left ( \begin{array}{cc} 2.5 & 2.5 \\ 0 & 2.5 \end{array} \right ) \ $ represents the coupling
+of neurons at the same layer. In this exercise, we are assuming two have two neurons, and try to find out if they
+are in reality stable at ``two possible steady state points'' derived algebraically from the firing rate equation. The two possible 
+steady state points are given as $\ v_\infty= \pm \left ( \begin{array}{c} 1 \\ 1 \end{array} \right ) \ $. 
+
+\begin{equation}
+ A=-I+diag \left ( \begin{array}{cc} \frac{1}{cosh^2(x_1)} & - \\ - & \frac{1}{cosh^2(x_2)} \end{array} \right ).M
+\end{equation}
+
+Let us firstly calculate $x_1$ and $x_2$ values to insert into the diagonal matrix, first use $v_\infty(+)$
+\newline \newline
+$ x=M.v_\infty=  \left ( \begin{array}{cc} 2.5 & 2.5 \\ 0 & 2.5 \end{array} \right ).\left ( \begin{array}{c} 1 \\ 1 \end{array} \right )
+=\left ( \begin{array}{c} 5 \\ 2.5  \end{array} \right ) $ \\
+
+Now, $x_1=5$ and $x_2=2.5$, let us insert those values into main equation. 
+\newline \newline
+$A=-I+diag  \left ( \begin{array}{cc} \frac{1}{cosh^2(5)} & - \\ - & \frac{1}{cosh^2(2.5)} \end{array} \right )
+.\left ( \begin{array}{cc} 2.5 & 2.5 \\ 0 & 2.5 \end{array} \right )  $ 
+
+$=-I+diag  \left ( \begin{array}{cc} 1,8158.10^{-4} & - \\ - & 0.0266 \end{array} \right )
+.\left ( \begin{array}{cc} 2.5 & 2.5 \\ 0 & 2.5 \end{array} \right )$
+
+$=\left ( \begin{array}{cc} -1 & 0 \\ 0 & -1 \end{array} \right )+
+\left ( \begin{array}{cc} 4,5396.10^{-4} & 4,5396.10^{-4} \\ 0 & 0.0665 \end{array} \right )$ 
+
+$=\left ( \begin{array}{cc} -0,9995 & 0,0005 \\ 0 & -0,9335 \end{array} \right )$
+
+The eigenvalues of the matrix \textbf{A} determines if the system is stable at $v_\infty(+)$. The corresponding eigenvalues of $A$ 
+are $\lambda_1=0,9995$ and $\lambda_2=-0.9335$. Since both eigenvalues are smaller than zero, the system is said to be stable at
+$v_\infty(+)$. 
+
+Now let us look at the system at $v_\infty(-)$:
+
+$ x=\left ( \begin{array}{cc} 2.5 & 2.5 \\ 0 & 2.5 \end{array} \right ).\left ( \begin{array}{c} -1 \\ -1 \end{array} \right )
+=\left ( \begin{array}{c} -5 \\ -2.5  \end{array} \right ) $ \\
+
+$A=-I+diag  \left ( \begin{array}{cc} \frac{1}{cosh^2(-5)} & - \\ - & \frac{1}{cosh^2(-2.5)} \end{array} \right )
+.\left ( \begin{array}{cc} 2.5 & 2.5 \\ 0 & 2.5 \end{array} \right )  $  \newline \newline
+Since $cosh(x)=cosh(-x)$, the matrix \textbf{A} is exactly as the same as previously calculated one, so trivially, the system is also
+stable at $v_\infty(-)$.
+
+\section{Discrete Evolution}
+The firing rate equation for our sytem is given as the following:
+\begin{equation}
+ \tau(v^{t+1}-v^t)=-v^t+F(Mv^t)
+\end{equation}
+where $F(x)=tanh(x)$. We are asked to solve this equation discretely. Firstly, the eqaution needs to be solved for $v^{t+1}$.
+\newline \newline
+$v^{t+1}=\frac{\tau-1}{\tau} v^t + \frac{1}{\tau}F(Mv^t)$
+
+\begin{itemize}
+ \item Solve $v^{t+1}$ discretely for the given weight matrix 
+$\ M= \left ( \begin{array}{cc} 0.5 & 0.5 \\ 0 & 0.5 \end{array} \right ) \ $. Use four different $\tau$ values such as
+ $\tau=0.5,\; 1, \; 2, \; 4\;$.
+\end{itemize}
+
+Lets solve the Equation 2  for the first and second neurons $v_1$ and $v_2$. \newline
+
+$ \left ( \begin{array}{cc} v_1^{t+1} \\ v_2^{t+1} \end{array} \right ) = 
+\frac{\tau-1}{\tau} \left ( \begin{array}{cc} v_1^{t} \\ v_2^{t} \end{array} \right )
++ \frac{1}{\tau} F (\left ( \begin{array}{cc} 0.5 &  0.5 \\ 0 & 0.5 \end{array} \right ) 
+\left ( \begin{array}{cc} v_1^{t} \\ v_2^{t} \end{array} \right ))  $ \newline \newline
+
+$=\frac{\tau-1}{\tau} \left ( \begin{array}{cc} v_1^{t} \\ v_2^{t} \end{array} \right )
++ \frac{1}{\tau} F (\left ( \begin{array}{cc} 0.5v_1^{t} + 0.5v_2^{t} \\  0.5v_2^{t} \end{array} \right ) ) $ \newline \newline
+
+$= \frac{\tau-1}{\tau} \left ( \begin{array}{cc} v_1^{t} \\ v_2^{t} \end{array} \right )
++ \frac{1}{\tau}  \left ( \begin{array}{cc} tanh( 0.5v_1^{t} + 0.5v_2^{t} ) \\  tanh(0.5v_2^{t}) \end{array} \right ) $ \newline\newline
+
+Let us write down the discrete time equations separately for the neurons. \newline
+
+$v_1^{t+1}= \frac{\tau-1}{\tau} v_1^{t} + tanh( 0.5v_1^{t} + 0.5v_2^{t} ) \;\;\;\;\;\;\;\;
+v_2^{t+1}= \frac{\tau-1}{\tau} v_2^{t} + tanh( 0.5v_2^{t} ) $ \newline\newline
+
+
+
+\begin{itemize}
+ \item Solve $v^{t+1}$ discretely for the given weight matrix 
+$\ M= \left ( \begin{array}{cc} 2.5 & 2.5 \\ 0 & 2.5 \end{array} \right ) \ $. Use four different $\tau$ values such as
+ $\tau=0.5,\; 1, \; 2, \; 4\;$. 
+\end{itemize}
+
+$ \left ( \begin{array}{cc} v_1^{t+1} \\ v_2^{t+1} \end{array} \right ) = 
+\frac{\tau-1}{\tau} \left ( \begin{array}{cc} v_1^{t} \\ v_2^{t} \end{array} \right )
++ \frac{1}{\tau} F (\left ( \begin{array}{cc} 2.5 & 2.5 \\ 0 & 2.5 \end{array} \right ) 
+\left ( \begin{array}{cc} v_1^{t} \\ v_2^{t} \end{array} \right ))  $ \newline \newline
+
+
+$= \frac{\tau-1}{\tau} \left ( \begin{array}{cc} v_1^{t} \\ v_2^{t} \end{array} \right )
++ \frac{1}{\tau}  \left ( \begin{array}{cc} tanh( 2.5v_1^{t} + 2.5v_2^{t} ) \\  tanh(2.5v_2^{t}) \end{array} \right ) $ \newline\newline
+
+
+$v_1^{t+1}= \frac{\tau-1}{\tau} v_1^{t} + tanh( 2.5v_1^{t} + 2.5v_2^{t} ) \;\;\;\;\;\;\;\;
+v_2^{t+1}= \frac{\tau-1}{\tau} v_2^{t} + tanh( 2.5v_2^{t} ) $ \newline\newline
+
+\section{Types of Networks}
+\subsection{Feedforward Networks}
+
+
+\end{document}

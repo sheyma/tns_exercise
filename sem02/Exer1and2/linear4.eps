@@ -1,0 +1,2005 @@
+%!PS-Adobe-3.0 EPSF-3.0
+%%Creator: MATLAB, The MathWorks, Inc. Version 7.13.0.564 (R2011b). Operating System: Linux 3.1.10-1.17-desktop #1 SMP PREEMPT Wed Jun 27 05:21:40 UTC 2012 (d016078) x86_64.
+%%Title: /home/sheyma/devel/spring_2012_13/tns_ii/Exer2/linear4.eps
+%%CreationDate: 04/21/2013  15:37:33
+%%DocumentNeededFonts: Helvetica
+%%DocumentProcessColors: Cyan Magenta Yellow Black
+%%LanguageLevel: 2
+%%Pages: 1
+%%BoundingBox:    68   218   542   574
+%%EndComments
+
+%%BeginProlog
+% MathWorks dictionary
+/MathWorks 160 dict begin
+% definition operators
+/bdef {bind def} bind def
+/ldef {load def} bind def
+/xdef {exch def} bdef
+/xstore {exch store} bdef
+% operator abbreviations
+/c  /clip ldef
+/cc /concat ldef
+/cp /closepath ldef
+/gr /grestore ldef
+/gs /gsave ldef
+/mt /moveto ldef
+/np /newpath ldef
+/cm /currentmatrix ldef
+/sm /setmatrix ldef
+/rm /rmoveto ldef
+/rl /rlineto ldef
+/s {show newpath} bdef
+/sc {setcmykcolor} bdef
+/sr /setrgbcolor ldef
+/sg /setgray ldef
+/w /setlinewidth ldef
+/j /setlinejoin ldef
+/cap /setlinecap ldef
+/rc {rectclip} bdef
+/rf {rectfill} bdef
+% page state control
+/pgsv () def
+/bpage {/pgsv save def} bdef
+/epage {pgsv restore} bdef
+/bplot /gsave ldef
+/eplot {stroke grestore} bdef
+% orientation switch
+/portraitMode 0 def /landscapeMode 1 def /rotateMode 2 def
+% coordinate system mappings
+/dpi2point 0 def
+% font control
+/FontSize 0 def
+/FMS {/FontSize xstore findfont [FontSize 0 0 FontSize neg 0 0]
+  makefont setfont} bdef
+/reencode {exch dup where {pop load} {pop StandardEncoding} ifelse
+  exch dup 3 1 roll findfont dup length dict begin
+  { 1 index /FID ne {def}{pop pop} ifelse } forall
+  /Encoding exch def currentdict end definefont pop} bdef
+/isroman {findfont /CharStrings get /Agrave known} bdef
+/FMSR {3 1 roll 1 index dup isroman {reencode} {pop pop} ifelse
+  exch FMS} bdef
+/csm {1 dpi2point div -1 dpi2point div scale neg translate
+ dup landscapeMode eq {pop -90 rotate}
+  {rotateMode eq {90 rotate} if} ifelse} bdef
+% line types: solid, dotted, dashed, dotdash
+/SO { [] 0 setdash } bdef
+/DO { [.5 dpi2point mul 4 dpi2point mul] 0 setdash } bdef
+/DA { [6 dpi2point mul] 0 setdash } bdef
+/DD { [.5 dpi2point mul 4 dpi2point mul 6 dpi2point mul 4
+  dpi2point mul] 0 setdash } bdef
+% macros for lines and objects
+/L {lineto stroke} bdef
+/MP {3 1 roll moveto 1 sub {rlineto} repeat} bdef
+/AP {{rlineto} repeat} bdef
+/PDlw -1 def
+/W {/PDlw currentlinewidth def setlinewidth} def
+/PP {closepath eofill} bdef
+/DP {closepath stroke} bdef
+/MR {4 -2 roll moveto dup  0 exch rlineto exch 0 rlineto
+  neg 0 exch rlineto closepath} bdef
+/FR {MR stroke} bdef
+/PR {MR fill} bdef
+/L1i {{currentfile picstr readhexstring pop} image} bdef
+/tMatrix matrix def
+/MakeOval {newpath tMatrix currentmatrix pop translate scale
+0 0 1 0 360 arc tMatrix setmatrix} bdef
+/FO {MakeOval stroke} bdef
+/PO {MakeOval fill} bdef
+/PD {currentlinewidth 2 div 0 360 arc fill
+   PDlw -1 eq not {PDlw w /PDlw -1 def} if} def
+/FA {newpath tMatrix currentmatrix pop translate scale
+  0 0 1 5 -2 roll arc tMatrix setmatrix stroke} bdef
+/PA {newpath tMatrix currentmatrix pop	translate 0 0 moveto scale
+  0 0 1 5 -2 roll arc closepath tMatrix setmatrix fill} bdef
+/FAn {newpath tMatrix currentmatrix pop translate scale
+  0 0 1 5 -2 roll arcn tMatrix setmatrix stroke} bdef
+/PAn {newpath tMatrix currentmatrix pop translate 0 0 moveto scale
+  0 0 1 5 -2 roll arcn closepath tMatrix setmatrix fill} bdef
+/vradius 0 def /hradius 0 def /lry 0 def
+/lrx 0 def /uly 0 def /ulx 0 def /rad 0 def
+/MRR {/vradius xdef /hradius xdef /lry xdef /lrx xdef /uly xdef
+  /ulx xdef newpath tMatrix currentmatrix pop ulx hradius add uly
+  vradius add translate hradius vradius scale 0 0 1 180 270 arc 
+  tMatrix setmatrix lrx hradius sub uly vradius add translate
+  hradius vradius scale 0 0 1 270 360 arc tMatrix setmatrix
+  lrx hradius sub lry vradius sub translate hradius vradius scale
+  0 0 1 0 90 arc tMatrix setmatrix ulx hradius add lry vradius sub
+  translate hradius vradius scale 0 0 1 90 180 arc tMatrix setmatrix
+  closepath} bdef
+/FRR {MRR stroke } bdef
+/PRR {MRR fill } bdef
+/MlrRR {/lry xdef /lrx xdef /uly xdef /ulx xdef /rad lry uly sub 2 div def
+  newpath tMatrix currentmatrix pop ulx rad add uly rad add translate
+  rad rad scale 0 0 1 90 270 arc tMatrix setmatrix lrx rad sub lry rad
+  sub translate rad rad scale 0 0 1 270 90 arc tMatrix setmatrix
+  closepath} bdef
+/FlrRR {MlrRR stroke } bdef
+/PlrRR {MlrRR fill } bdef
+/MtbRR {/lry xdef /lrx xdef /uly xdef /ulx xdef /rad lrx ulx sub 2 div def
+  newpath tMatrix currentmatrix pop ulx rad add uly rad add translate
+  rad rad scale 0 0 1 180 360 arc tMatrix setmatrix lrx rad sub lry rad
+  sub translate rad rad scale 0 0 1 0 180 arc tMatrix setmatrix
+  closepath} bdef
+/FtbRR {MtbRR stroke } bdef
+/PtbRR {MtbRR fill } bdef
+/stri 6 array def /dtri 6 array def
+/smat 6 array def /dmat 6 array def
+/tmat1 6 array def /tmat2 6 array def /dif 3 array def
+/asub {/ind2 exch def /ind1 exch def dup dup
+  ind1 get exch ind2 get sub exch } bdef
+/tri_to_matrix {
+  2 0 asub 3 1 asub 4 0 asub 5 1 asub
+  dup 0 get exch 1 get 7 -1 roll astore } bdef
+/compute_transform {
+  dmat dtri tri_to_matrix tmat1 invertmatrix 
+  smat stri tri_to_matrix tmat2 concatmatrix } bdef
+/ds {stri astore pop} bdef
+/dt {dtri astore pop} bdef
+/db {2 copy /cols xdef /rows xdef mul dup 3 mul string
+  currentfile 
+  3 index 0 eq {/ASCIIHexDecode filter}
+  {/ASCII85Decode filter 3 index 2 eq {/RunLengthDecode filter} if }
+  ifelse exch readstring pop
+  dup 0 3 index getinterval /rbmap xdef
+  dup 2 index dup getinterval /gbmap xdef
+  1 index dup 2 mul exch getinterval /bbmap xdef pop pop}bdef
+/it {gs np dtri aload pop moveto lineto lineto cp c
+  cols rows 8 compute_transform 
+  rbmap gbmap bbmap true 3 colorimage gr}bdef
+/il {newpath moveto lineto stroke}bdef
+currentdict end def
+%%EndProlog
+
+%%BeginSetup
+MathWorks begin
+
+0 cap
+
+end
+%%EndSetup
+
+%%Page: 1 1
+%%BeginPageSetup
+%%PageBoundingBox:    68   218   542   574
+MathWorks begin
+bpage
+%%EndPageSetup
+
+%%BeginObject: obj1
+bplot
+
+/dpi2point 12 def
+portraitMode 0816 6888 csm
+
+    0     0  5697  4269 rc
+86 dict begin %Colortable dictionary
+/c0 { 0.000000 0.000000 0.000000 sr} bdef
+/c1 { 1.000000 1.000000 1.000000 sr} bdef
+/c2 { 0.900000 0.000000 0.000000 sr} bdef
+/c3 { 0.000000 0.820000 0.000000 sr} bdef
+/c4 { 0.000000 0.000000 0.800000 sr} bdef
+/c5 { 0.910000 0.820000 0.320000 sr} bdef
+/c6 { 1.000000 0.260000 0.820000 sr} bdef
+/c7 { 0.000000 0.820000 0.820000 sr} bdef
+c0
+1 j
+1 sg
+   0    0 5698 4270 rf
+6 w
+0 3479 4415 0 0 -3479 741 3799 4 MP
+PP
+-4415 0 0 3479 4415 0 0 -3479 741 3799 5 MP stroke
+4 w
+DO
+SO
+6 w
+0 sg
+ 741 3799 mt 5156 3799 L
+ 741  320 mt 5156  320 L
+ 741 3799 mt  741  320 L
+5156 3799 mt 5156  320 L
+ 741 3799 mt 5156 3799 L
+ 741 3799 mt  741  320 L
+ 741 3799 mt  741 3754 L
+ 741  320 mt  741  364 L
+%%IncludeResource: font Helvetica
+/Helvetica /ISOLatin1Encoding 120 FMSR
+
+ 708 3944 mt 
+(0) s
+1182 3799 mt 1182 3754 L
+1182  320 mt 1182  364 L
+1116 3944 mt 
+(10) s
+1624 3799 mt 1624 3754 L
+1624  320 mt 1624  364 L
+1558 3944 mt 
+(20) s
+2065 3799 mt 2065 3754 L
+2065  320 mt 2065  364 L
+1999 3944 mt 
+(30) s
+2507 3799 mt 2507 3754 L
+2507  320 mt 2507  364 L
+2441 3944 mt 
+(40) s
+2948 3799 mt 2948 3754 L
+2948  320 mt 2948  364 L
+2882 3944 mt 
+(50) s
+3390 3799 mt 3390 3754 L
+3390  320 mt 3390  364 L
+3324 3944 mt 
+(60) s
+3831 3799 mt 3831 3754 L
+3831  320 mt 3831  364 L
+3765 3944 mt 
+(70) s
+4273 3799 mt 4273 3754 L
+4273  320 mt 4273  364 L
+4207 3944 mt 
+(80) s
+4714 3799 mt 4714 3754 L
+4714  320 mt 4714  364 L
+4648 3944 mt 
+(90) s
+5156 3799 mt 5156 3754 L
+5156  320 mt 5156  364 L
+5056 3944 mt 
+(100) s
+ 741 3799 mt  785 3799 L
+5156 3799 mt 5111 3799 L
+ 640 3843 mt 
+(0) s
+ 741 3451 mt  785 3451 L
+5156 3451 mt 5111 3451 L
+ 573 3495 mt 
+(10) s
+ 741 3103 mt  785 3103 L
+5156 3103 mt 5111 3103 L
+ 573 3147 mt 
+(20) s
+ 741 2755 mt  785 2755 L
+5156 2755 mt 5111 2755 L
+ 573 2799 mt 
+(30) s
+ 741 2407 mt  785 2407 L
+5156 2407 mt 5111 2407 L
+ 573 2451 mt 
+(40) s
+ 741 2059 mt  785 2059 L
+5156 2059 mt 5111 2059 L
+ 573 2103 mt 
+(50) s
+ 741 1711 mt  785 1711 L
+5156 1711 mt 5111 1711 L
+ 573 1755 mt 
+(60) s
+ 741 1363 mt  785 1363 L
+5156 1363 mt 5111 1363 L
+ 573 1407 mt 
+(70) s
+ 741 1015 mt  785 1015 L
+5156 1015 mt 5111 1015 L
+ 573 1059 mt 
+(80) s
+ 741  667 mt  785  667 L
+5156  667 mt 5111  667 L
+ 573  711 mt 
+(90) s
+ 741  320 mt  785  320 L
+5156  320 mt 5111  320 L
+ 506  364 mt 
+(100) s
+ 741 3799 mt 5156 3799 L
+ 741  320 mt 5156  320 L
+ 741 3799 mt  741  320 L
+5156 3799 mt 5156  320 L
+gs 741 320 4416 3480 rc
+/c8 { 0.000000 0.000000 1.000000 sr} bdef
+c8
+-5 1 42 9 827 3790 3 MP stroke
+-41 11 58 8 1077 3781 3 MP stroke
+-64 25 71 2 1316 3763 3 MP stroke
+-68 34 80 -5 1546 3744 3 MP stroke
+-67 42 85 -12 1769 3728 3 MP stroke
+-66 48 87 -18 1988 3716 3 MP stroke
+-62 53 86 -23 2204 3707 3 MP stroke
+-59 55 85 -27 2417 3701 3 MP stroke
+-53 57 81 -31 2629 3697 3 MP stroke
+-48 58 77 -33 2840 3694 3 MP stroke
+-43 59 73 -36 3050 3692 3 MP stroke
+-37 58 67 -38 3260 3691 3 MP stroke
+-31 58 62 -40 3469 3690 3 MP stroke
+-25 58 57 -41 3677 3689 3 MP stroke
+-19 57 51 -43 3885 3689 3 MP stroke
+-12 57 45 -46 4093 3690 3 MP stroke
+-6 56 39 -47 4301 3690 3 MP stroke
+1 55 32 -49 4509 3691 3 MP stroke
+7 54 25 -50 4717 3691 3 MP stroke
+14 52 19 -51 4924 3692 3 MP stroke
+13 31 13 -53 5131 3693 3 MP stroke
+-28 3 27 8 797 3625 3 MP stroke
+-44 9 44 8 1051 3615 3 MP stroke
+-55 19 60 3 1296 3597 3 MP stroke
+-61 30 71 -4 1532 3577 3 MP stroke
+-62 39 78 -11 1759 3561 3 MP stroke
+-62 45 81 -16 1981 3548 3 MP stroke
+-60 49 83 -21 2198 3540 3 MP stroke
+-57 52 82 -25 2413 3533 3 MP stroke
+-53 54 78 -28 2627 3529 3 MP stroke
+-48 55 75 -31 2838 3526 3 MP stroke
+-42 55 70 -33 3049 3524 3 MP stroke
+-37 56 65 -35 3259 3522 3 MP stroke
+-32 56 61 -38 3468 3522 3 MP stroke
+-25 55 55 -39 3677 3521 3 MP stroke
+-20 55 50 -41 3885 3521 3 MP stroke
+-13 53 44 -42 4093 3521 3 MP stroke
+-7 52 38 -44 4301 3522 3 MP stroke
+0 52 31 -46 4509 3522 3 MP stroke
+7 51 24 -47 4717 3523 3 MP stroke
+13 50 19 -49 4924 3524 3 MP stroke
+13 32 12 -51 5132 3525 3 MP stroke
+-15 -3 12 8 770 3459 3 MP stroke
+-30 4 29 8 1022 3449 3 MP stroke
+-44 15 47 3 1273 3431 3 MP stroke
+-52 25 61 -3 1514 3411 3 MP stroke
+-57 34 71 -9 1746 3394 3 MP stroke
+-58 41 75 -15 1972 3381 3 MP stroke
+-58 45 78 -19 2192 3372 3 MP stroke
+-55 48 77 -22 2409 3365 3 MP stroke
+-52 51 76 -26 2623 3361 3 MP stroke
+-47 52 72 -29 2836 3358 3 MP stroke
+-43 52 69 -30 3047 3355 3 MP stroke
+-36 53 64 -33 3257 3354 3 MP stroke
+-31 52 59 -34 3467 3353 3 MP stroke
+-26 52 54 -37 3676 3353 3 MP stroke
+-20 51 48 -38 3885 3353 3 MP stroke
+-13 51 42 -40 4093 3353 3 MP stroke
+-7 50 36 -41 4301 3353 3 MP stroke
+0 49 30 -43 4509 3354 3 MP stroke
+6 48 24 -45 4717 3355 3 MP stroke
+12 47 17 -46 4925 3355 3 MP stroke
+14 33 11 -48 5132 3356 3 MP stroke
+-7 -7 1 9 751 3292 3 MP stroke
+-17 -2 14 8 993 3284 3 MP stroke
+-31 9 33 3 1245 3265 3 MP stroke
+-42 21 49 -2 1493 3244 3 MP stroke
+-49 30 61 -8 1731 3227 3 MP stroke
+-53 37 69 -13 1960 3214 3 MP stroke
+-54 42 73 -17 2184 3204 3 MP stroke
+-52 45 73 -21 2403 3198 3 MP stroke
+-50 48 72 -24 2619 3193 3 MP stroke
+-46 48 69 -26 2833 3190 3 MP stroke
+-41 50 66 -28 3045 3187 3 MP stroke
+-37 49 62 -30 3256 3186 3 MP stroke
+-31 49 57 -32 3466 3185 3 MP stroke
+-25 49 51 -34 3676 3185 3 MP stroke
+-20 49 47 -36 3884 3185 3 MP stroke
+-14 48 41 -38 4093 3185 3 MP stroke
+-7 47 35 -39 4301 3185 3 MP stroke
+-1 46 29 -41 4509 3186 3 MP stroke
+5 46 23 -42 4717 3186 3 MP stroke
+12 45 16 -44 4925 3187 3 MP stroke
+15 34 9 -45 5133 3188 3 MP stroke
+-3 11 744 3125 2 MP stroke
+-5 -7 0 8 968 3118 3 MP stroke
+-17 3 17 4 1216 3099 3 MP stroke
+-30 16 36 -2 1467 3078 3 MP stroke
+-41 26 51 -7 1712 3060 3 MP stroke
+-47 33 61 -12 1947 3047 3 MP stroke
+-50 39 67 -16 2174 3037 3 MP stroke
+-50 42 69 -19 2396 3030 3 MP stroke
+-47 44 68 -21 2614 3025 3 MP stroke
+-45 45 67 -24 2829 3022 3 MP stroke
+-41 47 64 -26 3042 3019 3 MP stroke
+-36 47 60 -28 3254 3018 3 MP stroke
+-31 47 55 -30 3465 3017 3 MP stroke
+-26 46 50 -31 3675 3016 3 MP stroke
+-20 46 45 -33 3884 3016 3 MP stroke
+-14 45 39 -34 4093 3016 3 MP stroke
+-7 45 33 -37 4301 3017 3 MP stroke
+-2 44 28 -38 4509 3017 3 MP stroke
+5 43 21 -40 4717 3018 3 MP stroke
+11 41 15 -41 4925 3019 3 MP stroke
+16 35 8 -42 5133 3019 3 MP stroke
+-4 14 745 2956 2 MP stroke
+3 -11 -9 9 953 2951 3 MP stroke
+-4 -2 2 3 1188 2934 3 MP stroke
+-17 9 21 -2 1439 2913 3 MP stroke
+-30 21 38 -7 1689 2894 3 MP stroke
+-39 29 51 -11 1930 2880 3 MP stroke
+-44 34 59 -14 2162 2870 3 MP stroke
+-45 38 63 -16 2387 2862 3 MP stroke
+-45 41 64 -19 2608 2857 3 MP stroke
+-43 42 63 -22 2825 2854 3 MP stroke
+-40 43 61 -23 3039 2851 3 MP stroke
+-35 44 57 -26 3252 2850 3 MP stroke
+-31 44 53 -28 3463 2849 3 MP stroke
+-26 44 49 -29 3673 2848 3 MP stroke
+-20 43 43 -31 3883 2848 3 MP stroke
+-14 42 38 -32 4092 2848 3 MP stroke
+-8 41 32 -33 4301 2848 3 MP stroke
+-2 40 26 -35 4509 2849 3 MP stroke
+5 40 20 -37 4717 2850 3 MP stroke
+11 39 14 -38 4925 2850 3 MP stroke
+17 36 7 -40 5133 2851 3 MP stroke
+-5 16 746 2788 2 MP stroke
+3 -15 -11 12 951 2783 3 MP stroke
+7 -7 -10 3 1166 2768 3 MP stroke
+-3 4 5 -2 1410 2747 3 MP stroke
+-17 15 24 -7 1662 2729 3 MP stroke
+-29 23 40 -10 1909 2714 3 MP stroke
+-37 30 50 -13 2147 2703 3 MP stroke
+-41 34 56 -15 2377 2695 3 MP stroke
+-42 37 59 -18 2600 2690 3 MP stroke
+-40 38 59 -19 2819 2686 3 MP stroke
+-38 40 57 -21 3035 2683 3 MP stroke
+-34 40 54 -23 3249 2682 3 MP stroke
+-30 40 51 -25 3461 2681 3 MP stroke
+-25 40 46 -26 3672 2680 3 MP stroke
+-19 40 41 -28 3882 2680 3 MP stroke
+-14 40 35 -30 4092 2680 3 MP stroke
+-8 39 30 -31 4301 2680 3 MP stroke
+-3 38 25 -33 4509 2681 3 MP stroke
+4 37 19 -34 4717 2681 3 MP stroke
+10 36 13 -36 4925 2682 3 MP stroke
+17 35 6 -37 5133 2683 3 MP stroke
+-6 19 747 2620 2 MP stroke
+2 -17 -12 15 952 2614 3 MP stroke
+11 -11 -16 6 1157 2600 3 MP stroke
+9 -1 -9 -3 1384 2582 3 MP stroke
+-4 9 9 -7 1633 2563 3 MP stroke
+-17 18 26 -10 1885 2548 3 MP stroke
+-29 26 40 -12 2129 2536 3 MP stroke
+-35 30 49 -14 2363 2528 3 MP stroke
+-38 33 53 -15 2591 2522 3 MP stroke
+-38 35 55 -17 2812 2518 3 MP stroke
+-36 37 54 -19 3030 2515 3 MP stroke
+-33 37 52 -21 3245 2514 3 MP stroke
+-29 38 48 -22 3458 2512 3 MP stroke
+-24 37 44 -24 3670 2512 3 MP stroke
+-19 37 39 -26 3881 2512 3 MP stroke
+-14 36 34 -27 4091 2512 3 MP stroke
+-9 36 29 -29 4300 2512 3 MP stroke
+-3 35 23 -30 4509 2512 3 MP stroke
+4 35 17 -32 4717 2513 3 MP stroke
+9 33 12 -33 4925 2514 3 MP stroke
+17 32 5 -34 5133 2514 3 MP stroke
+-6 22 747 2451 2 MP stroke
+1 -20 -13 17 953 2446 3 MP stroke
+10 -14 -17 8 1157 2432 3 MP stroke
+18 -6 -19 -1 1366 2415 3 MP stroke
+10 4 -6 -8 1604 2398 3 MP stroke
+-4 13 11 -10 1857 2382 3 MP stroke
+-17 20 28 -11 2106 2370 3 MP stroke
+-27 25 39 -12 2347 2361 3 MP stroke
+-32 29 46 -14 2579 2355 3 MP stroke
+-34 32 49 -16 2804 2351 3 MP stroke
+-34 33 50 -17 3024 2348 3 MP stroke
+-31 34 48 -19 3241 2346 3 MP stroke
+-28 35 46 -20 3455 2344 3 MP stroke
+-23 35 41 -22 3668 2344 3 MP stroke
+-19 34 37 -23 3879 2343 3 MP stroke
+-14 33 32 -24 4090 2343 3 MP stroke
+-8 33 27 -26 4299 2344 3 MP stroke
+-3 32 22 -27 4508 2344 3 MP stroke
+3 31 16 -29 4717 2345 3 MP stroke
+10 30 10 -30 4925 2345 3 MP stroke
+16 30 4 -32 5133 2346 3 MP stroke
+-7 24 748 2283 2 MP stroke
+0 -22 -14 19 954 2278 3 MP stroke
+10 -16 -18 11 1158 2263 3 MP stroke
+19 -9 -22 1 1362 2247 3 MP stroke
+22 -2 -20 -6 1581 2231 3 MP stroke
+10 7 -4 -10 1827 2217 3 MP stroke
+-5 15 13 -11 2081 2204 3 MP stroke
+-17 21 28 -12 2327 2195 3 MP stroke
+-25 25 38 -13 2564 2188 3 MP stroke
+-29 28 42 -14 2794 2183 3 MP stroke
+-30 30 44 -15 3017 2180 3 MP stroke
+-29 31 44 -17 3236 2178 3 MP stroke
+-27 31 43 -17 3451 2176 3 MP stroke
+-23 32 39 -20 3665 2176 3 MP stroke
+-18 31 35 -20 3877 2175 3 MP stroke
+-13 31 30 -22 4088 2175 3 MP stroke
+-9 30 26 -23 4298 2175 3 MP stroke
+-3 29 20 -25 4508 2176 3 MP stroke
+3 28 14 -26 4717 2176 3 MP stroke
+9 28 9 -28 4925 2177 3 MP stroke
+15 26 3 -29 5133 2178 3 MP stroke
+-8 28 749 2114 2 MP stroke
+0 -26 -15 23 955 2109 3 MP stroke
+9 -20 -19 14 1159 2095 3 MP stroke
+18 -12 -23 3 1363 2079 3 MP stroke
+27 -5 -27 -5 1569 2064 3 MP stroke
+23 2 -19 -10 1800 2051 3 MP stroke
+8 10 -2 -12 2052 2039 3 MP stroke
+-7 16 15 -12 2304 2029 3 MP stroke
+-17 21 27 -12 2547 2021 3 MP stroke
+-23 24 35 -12 2781 2016 3 MP stroke
+-27 26 39 -14 3008 2013 3 MP stroke
+-27 27 40 -14 3229 2010 3 MP stroke
+-24 28 38 -16 3447 2009 3 MP stroke
+-22 28 36 -17 3662 2008 3 MP stroke
+-18 28 32 -18 3875 2007 3 MP stroke
+-14 28 29 -20 4086 2007 3 MP stroke
+-8 27 23 -21 4297 2007 3 MP stroke
+-3 27 18 -22 4507 2007 3 MP stroke
+3 26 13 -24 4716 2008 3 MP stroke
+9 24 7 -25 4925 2009 3 MP stroke
+15 24 1 -26 5133 2009 3 MP stroke
+-9 30 750 1946 2 MP stroke
+-1 -28 -16 25 956 1941 3 MP stroke
+8 -22 -20 17 1160 1926 3 MP stroke
+17 -14 -24 6 1364 1910 3 MP stroke
+27 -8 -28 -3 1568 1896 3 MP stroke
+32 -3 -30 -10 1781 1885 3 MP stroke
+22 3 -17 -11 2023 1873 3 MP stroke
+6 11 1 -12 2276 1863 3 MP stroke
+-7 16 16 -11 2525 1855 3 MP stroke
+-16 20 26 -11 2765 1849 3 MP stroke
+-22 22 32 -11 2997 1845 3 MP stroke
+-23 24 35 -13 3221 1843 3 MP stroke
+-22 25 34 -14 3441 1841 3 MP stroke
+-20 25 32 -15 3658 1840 3 MP stroke
+-16 25 29 -16 3872 1839 3 MP stroke
+-13 24 26 -17 4084 1839 3 MP stroke
+-8 24 22 -18 4295 1839 3 MP stroke
+-3 24 16 -20 4506 1839 3 MP stroke
+3 22 11 -21 4715 1840 3 MP stroke
+9 22 6 -22 4924 1840 3 MP stroke
+14 21 0 -24 5133 1841 3 MP stroke
+-10 33 751 1777 2 MP stroke
+-2 -30 -17 28 957 1772 3 MP stroke
+7 -24 -21 19 1161 1758 3 MP stroke
+17 -17 -25 9 1365 1742 3 MP stroke
+26 -11 -29 0 1569 1728 3 MP stroke
+34 -6 -34 -8 1774 1717 3 MP stroke
+34 -1 -31 -11 1998 1707 3 MP stroke
+20 5 -15 -12 2247 1698 3 MP stroke
+5 11 2 -11 2500 1689 3 MP stroke
+-8 15 16 -11 2746 1683 3 MP stroke
+-15 18 24 -10 2983 1678 3 MP stroke
+-19 20 29 -11 3211 1675 3 MP stroke
+-20 21 30 -11 3434 1673 3 MP stroke
+-18 22 29 -13 3652 1672 3 MP stroke
+-16 21 27 -13 3868 1671 3 MP stroke
+-12 22 23 -15 4082 1671 3 MP stroke
+-8 21 19 -16 4294 1671 3 MP stroke
+-3 20 15 -17 4504 1671 3 MP stroke
+3 20 10 -18 4714 1671 3 MP stroke
+8 19 4 -20 4924 1672 3 MP stroke
+14 19 -2 -22 5133 1673 3 MP stroke
+-11 35 752 1609 2 MP stroke
+-3 -34 -17 31 957 1604 3 MP stroke
+6 -27 -22 21 1162 1590 3 MP stroke
+16 -20 -26 12 1366 1573 3 MP stroke
+25 -14 -30 3 1570 1559 3 MP stroke
+33 -9 -35 -4 1775 1548 3 MP stroke
+40 -5 -39 -10 1983 1540 3 MP stroke
+34 -1 -30 -12 2219 1532 3 MP stroke
+18 5 -13 -12 2472 1524 3 MP stroke
+4 10 3 -10 2723 1517 3 MP stroke
+-7 14 14 -10 2966 1512 3 MP stroke
+-13 16 21 -9 3199 1508 3 MP stroke
+-15 17 24 -10 3425 1506 3 MP stroke
+-16 18 25 -10 3646 1504 3 MP stroke
+-14 18 23 -11 3864 1503 3 MP stroke
+-11 19 21 -13 4078 1503 3 MP stroke
+-7 18 17 -14 4291 1503 3 MP stroke
+-2 18 12 -15 4503 1503 3 MP stroke
+3 17 8 -16 4713 1503 3 MP stroke
+9 17 2 -18 4923 1504 3 MP stroke
+14 15 -3 -18 5132 1504 3 MP stroke
+-12 38 753 1441 2 MP stroke
+-4 -36 -18 34 958 1435 3 MP stroke
+5 -30 -23 25 1163 1421 3 MP stroke
+15 -22 -27 14 1367 1405 3 MP stroke
+24 -16 -31 5 1571 1391 3 MP stroke
+33 -12 -36 -2 1776 1380 3 MP stroke
+42 -8 -42 -8 1981 1372 3 MP stroke
+44 -5 -42 -12 2197 1366 3 MP stroke
+32 -1 -29 -11 2443 1358 3 MP stroke
+16 5 -12 -10 2697 1351 3 MP stroke
+3 9 3 -9 2945 1345 3 MP stroke
+-6 12 12 -8 3184 1341 3 MP stroke
+-11 14 17 -8 3415 1338 3 MP stroke
+-12 15 19 -8 3639 1336 3 MP stroke
+-11 15 19 -9 3858 1335 3 MP stroke
+-9 15 17 -10 4074 1335 3 MP stroke
+-5 15 14 -12 4288 1335 3 MP stroke
+-2 15 10 -13 4501 1335 3 MP stroke
+3 14 5 -14 4712 1335 3 MP stroke
+9 13 0 -15 4922 1336 3 MP stroke
+14 12 -5 -16 5132 1336 3 MP stroke
+-12 41 753 1272 2 MP stroke
+-5 -39 -19 36 959 1267 3 MP stroke
+4 -33 -23 27 1163 1253 3 MP stroke
+14 -26 -27 18 1367 1236 3 MP stroke
+23 -20 -32 9 1572 1222 3 MP stroke
+32 -14 -37 0 1777 1212 3 MP stroke
+41 -12 -43 -5 1982 1204 3 MP stroke
+48 -10 -48 -9 2188 1198 3 MP stroke
+44 -6 -43 -11 2417 1192 3 MP stroke
+30 -1 -27 -10 2668 1185 3 MP stroke
+15 3 -11 -8 2921 1179 3 MP stroke
+2 7 2 -8 3166 1175 3 MP stroke
+-5 10 10 -7 3401 1171 3 MP stroke
+-8 11 14 -7 3629 1169 3 MP stroke
+-9 12 15 -8 3851 1168 3 MP stroke
+-7 12 14 -8 4069 1167 3 MP stroke
+-5 12 11 -9 4285 1167 3 MP stroke
+-1 11 8 -10 4498 1167 3 MP stroke
+4 11 3 -11 4710 1167 3 MP stroke
+9 10 -2 -12 4921 1167 3 MP stroke
+14 10 -7 -14 5131 1168 3 MP stroke
+-13 43 754 1104 2 MP stroke
+-6 -42 -20 39 960 1099 3 MP stroke
+4 -35 -24 30 1164 1084 3 MP stroke
+13 -28 -28 20 1368 1068 3 MP stroke
+22 -22 -33 11 1573 1054 3 MP stroke
+31 -17 -37 4 1777 1043 3 MP stroke
+40 -14 -44 -2 1983 1035 3 MP stroke
+48 -12 -49 -7 2188 1030 3 MP stroke
+53 -10 -53 -11 2399 1026 3 MP stroke
+43 -7 -42 -10 2639 1020 3 MP stroke
+28 -2 -26 -9 2893 1014 3 MP stroke
+13 2 -11 -6 3144 1008 3 MP stroke
+3 5 0 -6 3385 1005 3 MP stroke
+-3 7 7 -5 3617 1002 3 MP stroke
+-5 8 9 -5 3843 1000 3 MP stroke
+-5 9 10 -6 4063 999 3 MP stroke
+-3 9 8 -7 4280 999 3 MP stroke
+0 8 5 -8 4495 999 3 MP stroke
+4 8 1 -9 4708 999 3 MP stroke
+10 8 -4 -10 4919 999 3 MP stroke
+14 6 -9 -11 5130 1000 3 MP stroke
+-14 47 755 935 2 MP stroke
+-6 -45 -21 42 961 930 3 MP stroke
+3 -39 -25 33 1165 916 3 MP stroke
+12 -31 -29 22 1369 900 3 MP stroke
+21 -24 -33 14 1573 885 3 MP stroke
+30 -20 -38 6 1778 875 3 MP stroke
+39 -16 -45 0 1984 867 3 MP stroke
+47 -15 -50 -5 2189 862 3 MP stroke
+54 -14 -56 -8 2395 858 3 MP stroke
+55 -12 -56 -10 2616 854 3 MP stroke
+42 -7 -42 -9 2864 848 3 MP stroke
+26 -3 -25 -7 3118 843 3 MP stroke
+13 1 -11 -5 3365 838 3 MP stroke
+4 3 -2 -4 3603 835 3 MP stroke
+0 4 2 -4 3833 833 3 MP stroke
+-1 5 4 -4 4056 832 3 MP stroke
+-1 6 4 -5 4275 831 3 MP stroke
+2 6 2 -6 4491 831 3 MP stroke
+5 5 -2 -7 4705 831 3 MP stroke
+10 4 -6 -7 4917 831 3 MP stroke
+14 4 -10 -8 5128 831 3 MP stroke
+-15 49 756 767 2 MP stroke
+-7 -47 -22 44 962 762 3 MP stroke
+2 -41 -26 35 1166 748 3 MP stroke
+11 -34 -30 26 1370 731 3 MP stroke
+20 -27 -34 16 1574 717 3 MP stroke
+29 -22 -39 9 1779 706 3 MP stroke
+38 -20 -45 3 1984 699 3 MP stroke
+46 -18 -51 -1 2190 693 3 MP stroke
+54 -16 -57 -5 2396 689 3 MP stroke
+60 -16 -62 -9 2603 687 3 MP stroke
+55 -13 -56 -8 2836 682 3 MP stroke
+39 -9 -40 -7 3089 677 3 MP stroke
+24 -4 -24 -5 3342 672 3 MP stroke
+12 -1 -11 -3 3585 668 3 MP stroke
+6 1 -5 -3 3820 666 3 MP stroke
+2 1 -1 -2 4047 664 3 MP stroke
+2 2 -1 -2 4269 663 3 MP stroke
+4 2 -2 -3 4486 663 3 MP stroke
+6 1 -5 -4 4702 663 3 MP stroke
+11 1 -9 -5 4915 663 3 MP stroke
+15 1 -12 -6 5126 663 3 MP stroke
+-16 52 757 598 2 MP stroke
+-8 -49 -23 47 963 593 3 MP stroke
+1 -43 -27 38 1167 579 3 MP stroke
+10 -36 -31 28 1371 563 3 MP stroke
+20 -30 -35 19 1575 549 3 MP stroke
+28 -26 -40 12 1780 538 3 MP stroke
+37 -22 -46 6 1985 530 3 MP stroke
+45 -20 -52 1 2191 525 3 MP stroke
+53 -19 -58 -3 2397 521 3 MP stroke
+60 -18 -64 -6 2603 518 3 MP stroke
+64 -18 -67 -8 2817 516 3 MP stroke
+53 -14 -55 -8 3060 512 3 MP stroke
+37 -10 -38 -4 3314 506 3 MP stroke
+23 -6 -24 -3 3564 502 3 MP stroke
+12 -4 -13 -1 3804 499 3 MP stroke
+7 -2 -8 -1 4036 497 3 MP stroke
+5 -2 -6 -1 4261 496 3 MP stroke
+6 -1 -6 -1 4481 495 3 MP stroke
+9 -1 -8 -2 4697 495 3 MP stroke
+12 -2 -12 -3 4912 495 3 MP stroke
+16 -3 -15 -3 5124 495 3 MP stroke
+-17 55 758 430 2 MP stroke
+-9 -53 -23 50 963 425 3 MP stroke
+0 -47 -28 41 1168 411 3 MP stroke
+10 -39 -32 31 1372 394 3 MP stroke
+19 -33 -36 22 1576 380 3 MP stroke
+27 -28 -41 15 1781 369 3 MP stroke
+37 -25 -47 8 1986 362 3 MP stroke
+44 -23 -53 4 2192 356 3 MP stroke
+52 -22 -59 0 2398 353 3 MP stroke
+59 -22 -65 -3 2604 350 3 MP stroke
+66 -21 -71 -6 2810 348 3 MP stroke
+64 -19 -69 -7 3035 346 3 MP stroke
+51 -16 -54 -5 3285 341 3 MP stroke
+35 -12 -38 -2 3539 336 3 MP stroke
+22 -9 -24 0 3785 332 3 MP stroke
+14 -6 -16 0 4022 330 3 MP stroke
+10 -5 -12 1 4251 328 3 MP stroke
+9 -5 -11 1 4474 327 3 MP stroke
+11 -4 -12 0 4692 327 3 MP stroke
+13 -5 -14 0 4908 327 3 MP stroke
+16 -6 -18 -1 5122 327 3 MP stroke
+128 0 741 3799 2 MP stroke
+174 -10 961 3799 2 MP stroke
+205 -34 1182 3799 2 MP stroke
+223 -60 1403 3799 2 MP stroke
+230 -83 1624 3799 2 MP stroke
+231 -101 1844 3799 2 MP stroke
+225 -115 2065 3799 2 MP stroke
+216 -125 2286 3799 2 MP stroke
+203 -133 2507 3799 2 MP stroke
+190 -138 2727 3799 2 MP stroke
+175 -143 2948 3799 2 MP stroke
+158 -146 3169 3799 2 MP stroke
+141 -149 3390 3799 2 MP stroke
+124 -151 3610 3799 2 MP stroke
+105 -153 3831 3799 2 MP stroke
+86 -155 4052 3799 2 MP stroke
+67 -156 4273 3799 2 MP stroke
+48 -157 4493 3799 2 MP stroke
+28 -158 4714 3799 2 MP stroke
+8 -158 4935 3799 2 MP stroke
+-12 -159 5156 3799 2 MP stroke
+83 8 741 3625 2 MP stroke
+134 -2 961 3625 2 MP stroke
+174 -25 1182 3625 2 MP stroke
+200 -52 1403 3625 2 MP stroke
+213 -75 1624 3625 2 MP stroke
+218 -93 1844 3625 2 MP stroke
+216 -106 2065 3625 2 MP stroke
+209 -117 2286 3625 2 MP stroke
+198 -124 2507 3625 2 MP stroke
+186 -130 2727 3625 2 MP stroke
+171 -134 2948 3625 2 MP stroke
+155 -138 3169 3625 2 MP stroke
+139 -141 3390 3625 2 MP stroke
+122 -143 3610 3625 2 MP stroke
+104 -145 3831 3625 2 MP stroke
+85 -146 4052 3625 2 MP stroke
+66 -147 4273 3625 2 MP stroke
+47 -149 4493 3625 2 MP stroke
+27 -149 4714 3625 2 MP stroke
+8 -150 4935 3625 2 MP stroke
+-12 -151 5156 3625 2 MP stroke
+41 16 741 3451 2 MP stroke
+90 6 961 3451 2 MP stroke
+138 -17 1182 3451 2 MP stroke
+172 -43 1403 3451 2 MP stroke
+193 -66 1624 3451 2 MP stroke
+203 -85 1844 3451 2 MP stroke
+205 -98 2065 3451 2 MP stroke
+200 -108 2286 3451 2 MP stroke
+192 -116 2507 3451 2 MP stroke
+181 -122 2727 3451 2 MP stroke
+168 -126 2948 3451 2 MP stroke
+152 -130 3169 3451 2 MP stroke
+136 -132 3390 3451 2 MP stroke
+120 -135 3610 3451 2 MP stroke
+102 -136 3831 3451 2 MP stroke
+83 -138 4052 3451 2 MP stroke
+64 -139 4273 3451 2 MP stroke
+46 -140 4493 3451 2 MP stroke
+27 -141 4714 3451 2 MP stroke
+7 -142 4935 3451 2 MP stroke
+-13 -143 5156 3451 2 MP stroke
+11 24 741 3277 2 MP stroke
+46 15 961 3277 2 MP stroke
+96 -9 1182 3277 2 MP stroke
+139 -35 1403 3277 2 MP stroke
+168 -58 1624 3277 2 MP stroke
+185 -76 1844 3277 2 MP stroke
+192 -90 2065 3277 2 MP stroke
+190 -100 2286 3277 2 MP stroke
+184 -108 2507 3277 2 MP stroke
+175 -113 2727 3277 2 MP stroke
+163 -118 2948 3277 2 MP stroke
+149 -121 3169 3277 2 MP stroke
+133 -124 3390 3277 2 MP stroke
+117 -126 3610 3277 2 MP stroke
+100 -128 3831 3277 2 MP stroke
+82 -130 4052 3277 2 MP stroke
+63 -131 4273 3277 2 MP stroke
+45 -132 4493 3277 2 MP stroke
+26 -133 4714 3277 2 MP stroke
+6 -134 4935 3277 2 MP stroke
+-14 -134 5156 3277 2 MP stroke
+0 33 741 3103 2 MP stroke
+7 23 961 3103 2 MP stroke
+51 0 1182 3103 2 MP stroke
+100 -27 1403 3103 2 MP stroke
+139 -50 1624 3103 2 MP stroke
+164 -68 1844 3103 2 MP stroke
+176 -82 2065 3103 2 MP stroke
+179 -92 2286 3103 2 MP stroke
+175 -99 2507 3103 2 MP stroke
+169 -105 2727 3103 2 MP stroke
+158 -110 2948 3103 2 MP stroke
+145 -113 3169 3103 2 MP stroke
+130 -116 3390 3103 2 MP stroke
+115 -118 3610 3103 2 MP stroke
+98 -120 3831 3103 2 MP stroke
+80 -121 4052 3103 2 MP stroke
+61 -123 4273 3103 2 MP stroke
+44 -124 4493 3103 2 MP stroke
+24 -125 4714 3103 2 MP stroke
+5 -125 4935 3103 2 MP stroke
+-15 -126 5156 3103 2 MP stroke
+0 41 741 2929 2 MP stroke
+-17 31 961 2929 2 MP stroke
+8 8 1182 2929 2 MP stroke
+57 -18 1403 2929 2 MP stroke
+103 -42 1624 2929 2 MP stroke
+137 -60 1844 2929 2 MP stroke
+156 -73 2065 2929 2 MP stroke
+164 -83 2286 2929 2 MP stroke
+165 -91 2507 2929 2 MP stroke
+161 -97 2727 2929 2 MP stroke
+152 -101 2948 2929 2 MP stroke
+140 -105 3169 2929 2 MP stroke
+126 -108 3390 2929 2 MP stroke
+112 -110 3610 2929 2 MP stroke
+95 -112 3831 2929 2 MP stroke
+78 -113 4052 2929 2 MP stroke
+60 -114 4273 2929 2 MP stroke
+42 -115 4493 2929 2 MP stroke
+23 -116 4714 2929 2 MP stroke
+4 -117 4935 2929 2 MP stroke
+-16 -118 5156 2929 2 MP stroke
+0 49 741 2755 2 MP stroke
+-21 40 961 2755 2 MP stroke
+-26 16 1182 2755 2 MP stroke
+12 -10 1403 2755 2 MP stroke
+62 -33 1624 2755 2 MP stroke
+105 -51 1844 2755 2 MP stroke
+132 -65 2065 2755 2 MP stroke
+147 -75 2286 2755 2 MP stroke
+152 -83 2507 2755 2 MP stroke
+151 -88 2727 2755 2 MP stroke
+144 -93 2948 2755 2 MP stroke
+134 -96 3169 2755 2 MP stroke
+122 -99 3390 2755 2 MP stroke
+108 -101 3610 2755 2 MP stroke
+92 -103 3831 2755 2 MP stroke
+75 -105 4052 2755 2 MP stroke
+58 -106 4273 2755 2 MP stroke
+41 -107 4493 2755 2 MP stroke
+22 -108 4714 2755 2 MP stroke
+3 -109 4935 2755 2 MP stroke
+-17 -109 5156 2755 2 MP stroke
+0 58 741 2581 2 MP stroke
+-21 48 961 2581 2 MP stroke
+-41 25 1182 2581 2 MP stroke
+-28 -2 1403 2581 2 MP stroke
+18 -25 1624 2581 2 MP stroke
+67 -43 1844 2581 2 MP stroke
+104 -57 2065 2581 2 MP stroke
+126 -67 2286 2581 2 MP stroke
+137 -74 2507 2581 2 MP stroke
+140 -80 2727 2581 2 MP stroke
+136 -85 2948 2581 2 MP stroke
+128 -88 3169 2581 2 MP stroke
+116 -91 3390 2581 2 MP stroke
+104 -93 3610 2581 2 MP stroke
+89 -95 3831 2581 2 MP stroke
+73 -96 4052 2581 2 MP stroke
+56 -98 4273 2581 2 MP stroke
+39 -99 4493 2581 2 MP stroke
+20 -100 4714 2581 2 MP stroke
+2 -100 4935 2581 2 MP stroke
+-18 -101 5156 2581 2 MP stroke
+0 66 741 2407 2 MP stroke
+-21 56 961 2407 2 MP stroke
+-42 33 1182 2407 2 MP stroke
+-56 7 1403 2407 2 MP stroke
+-26 -17 1624 2407 2 MP stroke
+24 -35 1844 2407 2 MP stroke
+69 -48 2065 2407 2 MP stroke
+100 -58 2286 2407 2 MP stroke
+118 -66 2507 2407 2 MP stroke
+126 -72 2727 2407 2 MP stroke
+126 -76 2948 2407 2 MP stroke
+120 -80 3169 2407 2 MP stroke
+111 -83 3390 2407 2 MP stroke
+99 -85 3610 2407 2 MP stroke
+85 -87 3831 2407 2 MP stroke
+70 -88 4052 2407 2 MP stroke
+53 -89 4273 2407 2 MP stroke
+37 -90 4493 2407 2 MP stroke
+19 -91 4714 2407 2 MP stroke
+0 -92 4935 2407 2 MP stroke
+-19 -93 5156 2407 2 MP stroke
+0 74 741 2233 2 MP stroke
+-21 64 961 2233 2 MP stroke
+-42 41 1182 2233 2 MP stroke
+-63 15 1403 2233 2 MP stroke
+-63 -8 1624 2233 2 MP stroke
+-21 -26 1844 2233 2 MP stroke
+29 -40 2065 2233 2 MP stroke
+69 -50 2286 2233 2 MP stroke
+95 -58 2507 2233 2 MP stroke
+109 -64 2727 2233 2 MP stroke
+113 -68 2948 2233 2 MP stroke
+111 -72 3169 2233 2 MP stroke
+104 -74 3390 2233 2 MP stroke
+94 -77 3610 2233 2 MP stroke
+81 -78 3831 2233 2 MP stroke
+66 -80 4052 2233 2 MP stroke
+51 -81 4273 2233 2 MP stroke
+35 -82 4493 2233 2 MP stroke
+17 -83 4714 2233 2 MP stroke
+-1 -84 4935 2233 2 MP stroke
+-20 -84 5156 2233 2 MP stroke
+0 83 741 2059 2 MP stroke
+-21 73 961 2059 2 MP stroke
+-42 50 1182 2059 2 MP stroke
+-63 23 1403 2059 2 MP stroke
+-82 0 1624 2059 2 MP stroke
+-63 -18 1844 2059 2 MP stroke
+-15 -32 2065 2059 2 MP stroke
+33 -42 2286 2059 2 MP stroke
+67 -50 2507 2059 2 MP stroke
+89 -55 2727 2059 2 MP stroke
+99 -60 2948 2059 2 MP stroke
+100 -63 3169 2059 2 MP stroke
+95 -66 3390 2059 2 MP stroke
+88 -68 3610 2059 2 MP stroke
+76 -70 3831 2059 2 MP stroke
+63 -72 4052 2059 2 MP stroke
+47 -73 4273 2059 2 MP stroke
+32 -74 4493 2059 2 MP stroke
+15 -75 4714 2059 2 MP stroke
+-3 -75 4935 2059 2 MP stroke
+-22 -76 5156 2059 2 MP stroke
+0 91 741 1885 2 MP stroke
+-21 81 961 1885 2 MP stroke
+-42 58 1182 1885 2 MP stroke
+-63 31 1403 1885 2 MP stroke
+-84 8 1624 1885 2 MP stroke
+-93 -10 1844 1885 2 MP stroke
+-59 -23 2065 1885 2 MP stroke
+-9 -34 2286 1885 2 MP stroke
+34 -41 2507 1885 2 MP stroke
+64 -47 2727 1885 2 MP stroke
+81 -51 2948 1885 2 MP stroke
+87 -55 3169 1885 2 MP stroke
+85 -58 3390 1885 2 MP stroke
+80 -60 3610 1885 2 MP stroke
+70 -62 3831 1885 2 MP stroke
+58 -63 4052 1885 2 MP stroke
+44 -64 4273 1885 2 MP stroke
+29 -66 4493 1885 2 MP stroke
+12 -66 4714 1885 2 MP stroke
+-5 -67 4935 1885 2 MP stroke
+-23 -68 5156 1885 2 MP stroke
+0 99 741 1711 2 MP stroke
+-21 89 961 1711 2 MP stroke
+-42 66 1182 1711 2 MP stroke
+-63 40 1403 1711 2 MP stroke
+-84 17 1624 1711 2 MP stroke
+-104 -2 1844 1711 2 MP stroke
+-98 -15 2065 1711 2 MP stroke
+-54 -25 2286 1711 2 MP stroke
+-5 -33 2507 1711 2 MP stroke
+35 -39 2727 1711 2 MP stroke
+59 -43 2948 1711 2 MP stroke
+71 -47 3169 1711 2 MP stroke
+74 -49 3390 1711 2 MP stroke
+71 -52 3610 1711 2 MP stroke
+64 -53 3831 1711 2 MP stroke
+53 -55 4052 1711 2 MP stroke
+40 -56 4273 1711 2 MP stroke
+26 -57 4493 1711 2 MP stroke
+10 -58 4714 1711 2 MP stroke
+-7 -59 4935 1711 2 MP stroke
+-25 -60 5156 1711 2 MP stroke
+0 107 741 1537 2 MP stroke
+-21 98 961 1537 2 MP stroke
+-42 74 1182 1537 2 MP stroke
+-63 48 1403 1537 2 MP stroke
+-84 25 1624 1537 2 MP stroke
+-104 7 1844 1537 2 MP stroke
+-121 -7 2065 1537 2 MP stroke
+-97 -17 2286 1537 2 MP stroke
+-48 -25 2507 1537 2 MP stroke
+-1 -30 2727 1537 2 MP stroke
+32 -35 2948 1537 2 MP stroke
+51 -38 3169 1537 2 MP stroke
+59 -41 3390 1537 2 MP stroke
+61 -43 3610 1537 2 MP stroke
+56 -45 3831 1537 2 MP stroke
+47 -47 4052 1537 2 MP stroke
+35 -48 4273 1537 2 MP stroke
+22 -49 4493 1537 2 MP stroke
+7 -50 4714 1537 2 MP stroke
+-10 -51 4935 1537 2 MP stroke
+-27 -51 5156 1537 2 MP stroke
+0 116 741 1363 2 MP stroke
+-21 106 961 1363 2 MP stroke
+-42 83 1182 1363 2 MP stroke
+-63 56 1403 1363 2 MP stroke
+-84 33 1624 1363 2 MP stroke
+-104 15 1844 1363 2 MP stroke
+-126 1 2065 1363 2 MP stroke
+-131 -9 2286 1363 2 MP stroke
+-93 -16 2507 1363 2 MP stroke
+-42 -22 2727 1363 2 MP stroke
+0 -27 2948 1363 2 MP stroke
+27 -30 3169 1363 2 MP stroke
+42 -33 3390 1363 2 MP stroke
+48 -35 3610 1363 2 MP stroke
+46 -37 3831 1363 2 MP stroke
+39 -38 4052 1363 2 MP stroke
+29 -40 4273 1363 2 MP stroke
+18 -41 4493 1363 2 MP stroke
+3 -42 4714 1363 2 MP stroke
+-13 -42 4935 1363 2 MP stroke
+-29 -43 5156 1363 2 MP stroke
+0 124 741 1189 2 MP stroke
+-21 114 961 1189 2 MP stroke
+-42 91 1182 1189 2 MP stroke
+-63 65 1403 1189 2 MP stroke
+-84 42 1624 1189 2 MP stroke
+-104 23 1844 1189 2 MP stroke
+-126 10 2065 1189 2 MP stroke
+-146 0 2286 1189 2 MP stroke
+-133 -8 2507 1189 2 MP stroke
+-86 -14 2727 1189 2 MP stroke
+-38 -18 2948 1189 2 MP stroke
+-1 -22 3169 1189 2 MP stroke
+21 -25 3390 1189 2 MP stroke
+33 -27 3610 1189 2 MP stroke
+35 -29 3831 1189 2 MP stroke
+31 -30 4052 1189 2 MP stroke
+23 -31 4273 1189 2 MP stroke
+13 -32 4493 1189 2 MP stroke
+-1 -33 4714 1189 2 MP stroke
+-16 -34 4935 1189 2 MP stroke
+-32 -35 5156 1189 2 MP stroke
+0 132 741 1015 2 MP stroke
+-21 123 961 1015 2 MP stroke
+-42 99 1182 1015 2 MP stroke
+-63 73 1403 1015 2 MP stroke
+-84 50 1624 1015 2 MP stroke
+-104 32 1844 1015 2 MP stroke
+-126 18 2065 1015 2 MP stroke
+-147 8 2286 1015 2 MP stroke
+-161 0 2507 1015 2 MP stroke
+-130 -5 2727 1015 2 MP stroke
+-81 -10 2948 1015 2 MP stroke
+-36 -13 3169 1015 2 MP stroke
+-5 -16 3390 1015 2 MP stroke
+14 -18 3610 1015 2 MP stroke
+21 -20 3831 1015 2 MP stroke
+21 -22 4052 1015 2 MP stroke
+15 -23 4273 1015 2 MP stroke
+7 -24 4493 1015 2 MP stroke
+-5 -25 4714 1015 2 MP stroke
+-20 -26 4935 1015 2 MP stroke
+-35 -26 5156 1015 2 MP stroke
+0 141 741 841 2 MP stroke
+-21 131 961 841 2 MP stroke
+-42 108 1182 841 2 MP stroke
+-63 81 1403 841 2 MP stroke
+-84 58 1624 841 2 MP stroke
+-104 40 1844 841 2 MP stroke
+-126 26 2065 841 2 MP stroke
+-147 16 2286 841 2 MP stroke
+-168 9 2507 841 2 MP stroke
+-167 3 2727 841 2 MP stroke
+-126 -2 2948 841 2 MP stroke
+-76 -5 3169 841 2 MP stroke
+-36 -8 3390 841 2 MP stroke
+-9 -10 3610 841 2 MP stroke
+4 -12 3831 841 2 MP stroke
+8 -13 4052 841 2 MP stroke
+6 -15 4273 841 2 MP stroke
+0 -16 4493 841 2 MP stroke
+-11 -17 4714 841 2 MP stroke
+-24 -17 4935 841 2 MP stroke
+-38 -18 5156 841 2 MP stroke
+0 149 741 667 2 MP stroke
+-21 139 961 667 2 MP stroke
+-42 116 1182 667 2 MP stroke
+-63 90 1403 667 2 MP stroke
+-84 66 1624 667 2 MP stroke
+-104 48 1844 667 2 MP stroke
+-126 35 2065 667 2 MP stroke
+-147 25 2286 667 2 MP stroke
+-168 17 2507 667 2 MP stroke
+-186 11 2727 667 2 MP stroke
+-168 7 2948 667 2 MP stroke
+-120 3 3169 667 2 MP stroke
+-72 0 3390 667 2 MP stroke
+-36 -2 3610 667 2 MP stroke
+-16 -4 3831 667 2 MP stroke
+-6 -5 4052 667 2 MP stroke
+-5 -6 4273 667 2 MP stroke
+-9 -7 4493 667 2 MP stroke
+-17 -8 4714 667 2 MP stroke
+-29 -9 4935 667 2 MP stroke
+-42 -10 5156 667 2 MP stroke
+0 157 741 493 2 MP stroke
+-21 147 961 493 2 MP stroke
+-42 124 1182 493 2 MP stroke
+-63 98 1403 493 2 MP stroke
+-84 75 1624 493 2 MP stroke
+-104 57 1844 493 2 MP stroke
+-126 43 2065 493 2 MP stroke
+-147 33 2286 493 2 MP stroke
+-168 25 2507 493 2 MP stroke
+-188 19 2727 493 2 MP stroke
+-198 15 2948 493 2 MP stroke
+-164 11 3169 493 2 MP stroke
+-114 9 3390 493 2 MP stroke
+-70 6 3610 493 2 MP stroke
+-40 5 3831 493 2 MP stroke
+-24 3 4052 493 2 MP stroke
+-18 2 4273 493 2 MP stroke
+-18 1 4493 493 2 MP stroke
+-25 0 4714 493 2 MP stroke
+-35 -1 4935 493 2 MP stroke
+-47 -1 5156 493 2 MP stroke
+0 165 741 320 2 MP stroke
+-21 155 961 320 2 MP stroke
+-42 132 1182 320 2 MP stroke
+-63 105 1403 320 2 MP stroke
+-84 82 1624 320 2 MP stroke
+-104 64 1844 320 2 MP stroke
+-126 50 2065 320 2 MP stroke
+-147 40 2286 320 2 MP stroke
+-168 33 2507 320 2 MP stroke
+-188 27 2727 320 2 MP stroke
+-209 22 2948 320 2 MP stroke
+-203 19 3169 320 2 MP stroke
+-159 16 3390 320 2 MP stroke
+-109 14 3610 320 2 MP stroke
+-70 12 3831 320 2 MP stroke
+-46 10 4052 320 2 MP stroke
+-34 9 4273 320 2 MP stroke
+-30 8 4493 320 2 MP stroke
+-34 7 4714 320 2 MP stroke
+-41 7 4935 320 2 MP stroke
+-52 6 5156 320 2 MP stroke
+/c9 { 0.000000 0.500000 0.000000 sr} bdef
+c9
+-5 1 144 29 1034 3770 3 MP stroke
+-49 10 153 30 1096 3760 3 MP stroke
+-157 31 157 31 1147 3733 3 MP stroke
+-156 31 156 31 1190 3691 3 MP stroke
+-151 29 151 30 1223 3635 3 MP stroke
+-142 28 142 28 1249 3566 3 MP stroke
+-129 26 129 25 1269 3486 3 MP stroke
+-115 22 115 23 1282 3396 3 MP stroke
+-97 19 97 19 1291 3300 3 MP stroke
+-78 15 78 16 1295 3197 3 MP stroke
+-57 11 57 12 1298 3091 3 MP stroke
+-36 7 36 8 1299 2983 3 MP stroke
+-16 3 16 3 1301 2875 3 MP stroke
+4 -1 -4 -1 1305 2766 3 MP stroke
+23 -4 -23 -5 1312 2659 3 MP stroke
+39 -8 -39 -8 1323 2554 3 MP stroke
+54 -11 -54 -10 1338 2451 3 MP stroke
+66 -13 -66 -13 1357 2352 3 MP stroke
+77 -15 -77 -15 1381 2257 3 MP stroke
+84 -17 -84 -17 1407 2165 3 MP stroke
+92 -18 -92 -18 1437 2077 3 MP stroke
+98 -19 -98 -19 1469 1993 3 MP stroke
+103 -21 -103 -20 1502 1914 3 MP stroke
+108 -21 -108 -22 1537 1839 3 MP stroke
+113 -22 -113 -23 1571 1768 3 MP stroke
+118 -23 -118 -23 1606 1700 3 MP stroke
+122 -24 -122 -24 1640 1637 3 MP stroke
+127 -25 -127 -25 1675 1577 3 MP stroke
+132 -26 -132 -26 1710 1521 3 MP stroke
+136 -27 -136 -27 1744 1468 3 MP stroke
+141 -28 -141 -28 1779 1418 3 MP stroke
+146 -29 -146 -29 1814 1371 3 MP stroke
+150 -30 -150 -29 1848 1326 3 MP stroke
+155 -30 -155 -31 1883 1285 3 MP stroke
+159 -32 -159 -31 1917 1245 3 MP stroke
+164 -32 -164 -32 1952 1208 3 MP stroke
+168 -33 -168 -33 1988 1173 3 MP stroke
+172 -34 -172 -34 2025 1140 3 MP stroke
+175 -34 -175 -35 2062 1109 3 MP stroke
+178 -35 -178 -35 2101 1079 3 MP stroke
+180 -35 -180 -36 2142 1051 3 MP stroke
+181 -35 -181 -36 2184 1024 3 MP stroke
+181 -36 -181 -35 2227 998 3 MP stroke
+181 -35 -181 -36 2273 974 3 MP stroke
+179 -35 -179 -35 2320 950 3 MP stroke
+177 -34 -177 -35 2369 928 3 MP stroke
+174 -35 -174 -34 2420 907 3 MP stroke
+169 -33 -169 -33 2472 886 3 MP stroke
+165 -32 -165 -33 2526 867 3 MP stroke
+159 -31 -159 -32 2581 848 3 MP stroke
+153 -30 -153 -30 2638 829 3 MP stroke
+146 -29 -146 -29 2695 812 3 MP stroke
+139 -28 -139 -27 2753 795 3 MP stroke
+132 -26 -132 -26 2812 779 3 MP stroke
+125 -24 -125 -25 2872 764 3 MP stroke
+117 -23 -117 -23 2931 749 3 MP stroke
+110 -22 -110 -22 2991 735 3 MP stroke
+102 -20 -102 -20 3050 721 3 MP stroke
+94 -18 -94 -19 3109 708 3 MP stroke
+87 -17 -87 -17 3168 695 3 MP stroke
+80 -15 -80 -16 3226 683 3 MP stroke
+74 -14 -74 -15 3284 672 3 MP stroke
+67 -13 -67 -14 3341 661 3 MP stroke
+61 -12 -61 -12 3397 650 3 MP stroke
+56 -11 -56 -11 3453 640 3 MP stroke
+50 -10 -50 -10 3507 630 3 MP stroke
+46 -9 -46 -9 3561 621 3 MP stroke
+41 -8 -41 -8 3614 612 3 MP stroke
+38 -7 -38 -8 3667 604 3 MP stroke
+34 -7 -34 -7 3718 596 3 MP stroke
+31 -6 -31 -6 3769 588 3 MP stroke
+28 -5 -28 -6 3819 581 3 MP stroke
+26 -5 -26 -5 3868 574 3 MP stroke
+23 -4 -23 -5 3916 567 3 MP stroke
+22 -4 -22 -5 3964 561 3 MP stroke
+20 -3 -20 -4 4011 554 3 MP stroke
+19 -4 -19 -4 4058 549 3 MP stroke
+18 -3 -18 -4 4103 543 3 MP stroke
+18 -3 -18 -4 4149 538 3 MP stroke
+17 -3 -17 -3 4193 532 3 MP stroke
+18 -3 -18 -4 4238 528 3 MP stroke
+17 -3 -17 -4 4281 523 3 MP stroke
+18 -4 -18 -3 4325 518 3 MP stroke
+18 -3 -18 -4 4367 514 3 MP stroke
+20 -4 -20 -4 4410 510 3 MP stroke
+21 -4 -21 -4 4452 506 3 MP stroke
+21 -4 -21 -4 4493 502 3 MP stroke
+23 -4 -23 -5 4535 499 3 MP stroke
+25 -4 -25 -5 4576 495 3 MP stroke
+26 -5 -26 -5 4616 492 3 MP stroke
+29 -5 -29 -6 4657 489 3 MP stroke
+31 -6 -31 -6 4697 486 3 MP stroke
+33 -6 -33 -7 4737 483 3 MP stroke
+35 -7 -35 -7 4776 480 3 MP stroke
+37 -7 -37 -7 4815 477 3 MP stroke
+40 -8 -40 -8 4855 475 3 MP stroke
+42 -8 -42 -9 4893 473 3 MP stroke
+45 -8 -45 -9 4932 470 3 MP stroke
+48 -10 -48 -9 4971 468 3 MP stroke
+50 -10 -50 -10 5009 466 3 MP stroke
+53 -10 -53 -11 5047 464 3 MP stroke
+437 0 741 3799 2 MP stroke
+464 0 785 3790 2 MP stroke
+475 0 829 3764 2 MP stroke
+473 0 873 3722 2 MP stroke
+457 0 917 3665 2 MP stroke
+430 0 961 3594 2 MP stroke
+393 0 1005 3511 2 MP stroke
+347 0 1050 3419 2 MP stroke
+294 0 1094 3319 2 MP stroke
+235 0 1138 3213 2 MP stroke
+173 0 1182 3103 2 MP stroke
+109 0 1226 2991 2 MP stroke
+47 0 1270 2878 2 MP stroke
+-13 0 1314 2765 2 MP stroke
+-70 0 1359 2654 2 MP stroke
+-119 0 1403 2546 2 MP stroke
+-163 0 1447 2441 2 MP stroke
+-200 0 1491 2339 2 MP stroke
+-231 0 1535 2242 2 MP stroke
+-256 0 1579 2148 2 MP stroke
+-279 0 1624 2059 2 MP stroke
+-297 0 1668 1974 2 MP stroke
+-313 0 1712 1894 2 MP stroke
+-327 0 1756 1817 2 MP stroke
+-342 0 1800 1745 2 MP stroke
+-356 0 1844 1677 2 MP stroke
+-370 0 1888 1613 2 MP stroke
+-385 0 1933 1552 2 MP stroke
+-399 0 1977 1495 2 MP stroke
+-413 0 2021 1441 2 MP stroke
+-427 0 2065 1390 2 MP stroke
+-441 0 2109 1342 2 MP stroke
+-455 0 2153 1297 2 MP stroke
+-469 0 2197 1254 2 MP stroke
+-484 0 2242 1214 2 MP stroke
+-498 0 2286 1176 2 MP stroke
+-510 0 2330 1140 2 MP stroke
+-521 0 2374 1106 2 MP stroke
+-531 0 2418 1074 2 MP stroke
+-539 0 2462 1044 2 MP stroke
+-545 0 2507 1015 2 MP stroke
+-548 0 2551 988 2 MP stroke
+-549 0 2595 963 2 MP stroke
+-547 0 2639 938 2 MP stroke
+-542 0 2683 915 2 MP stroke
+-535 0 2727 893 2 MP stroke
+-525 0 2771 873 2 MP stroke
+-513 0 2816 853 2 MP stroke
+-499 0 2860 834 2 MP stroke
+-482 0 2904 816 2 MP stroke
+-463 0 2948 799 2 MP stroke
+-443 0 2992 783 2 MP stroke
+-422 0 3036 768 2 MP stroke
+-400 0 3080 753 2 MP stroke
+-378 0 3125 739 2 MP stroke
+-355 0 3169 726 2 MP stroke
+-332 0 3213 713 2 MP stroke
+-309 0 3257 701 2 MP stroke
+-286 0 3301 689 2 MP stroke
+-264 0 3345 678 2 MP stroke
+-244 0 3390 667 2 MP stroke
+-224 0 3434 657 2 MP stroke
+-204 0 3478 647 2 MP stroke
+-186 0 3522 638 2 MP stroke
+-169 0 3566 629 2 MP stroke
+-153 0 3610 620 2 MP stroke
+-139 0 3654 612 2 MP stroke
+-126 0 3699 604 2 MP stroke
+-114 0 3743 596 2 MP stroke
+-103 0 3787 589 2 MP stroke
+-93 0 3831 582 2 MP stroke
+-84 0 3875 575 2 MP stroke
+-77 0 3919 569 2 MP stroke
+-70 0 3963 562 2 MP stroke
+-66 0 4008 556 2 MP stroke
+-61 0 4052 550 2 MP stroke
+-57 0 4096 545 2 MP stroke
+-55 0 4140 539 2 MP stroke
+-53 0 4184 534 2 MP stroke
+-52 0 4228 529 2 MP stroke
+-53 0 4273 524 2 MP stroke
+-53 0 4317 519 2 MP stroke
+-54 0 4361 515 2 MP stroke
+-56 0 4405 510 2 MP stroke
+-59 0 4449 506 2 MP stroke
+-62 0 4493 502 2 MP stroke
+-65 0 4537 498 2 MP stroke
+-70 0 4582 494 2 MP stroke
+-75 0 4626 490 2 MP stroke
+-80 0 4670 487 2 MP stroke
+-86 0 4714 483 2 MP stroke
+-92 0 4758 480 2 MP stroke
+-98 0 4802 476 2 MP stroke
+-105 0 4846 473 2 MP stroke
+-113 0 4891 470 2 MP stroke
+-120 0 4935 467 2 MP stroke
+-128 0 4979 464 2 MP stroke
+-136 0 5023 461 2 MP stroke
+-144 0 5067 459 2 MP stroke
+-152 0 5111 456 2 MP stroke
+-162 0 5156 453 2 MP stroke
+/c10 { 1.000000 0.000000 0.000000 sr} bdef
+c10
+-6 20 747 3145 2 MP stroke
+-6 -19 -6 19 791 3190 3 MP stroke
+-6 -19 -6 19 835 3178 3 MP stroke
+-6 -17 -6 17 879 3156 3 MP stroke
+-5 -17 -5 17 922 3128 3 MP stroke
+-5 -16 -5 16 966 3096 3 MP stroke
+-4 -14 -5 14 1010 3061 3 MP stroke
+-4 -12 -4 12 1054 3025 3 MP stroke
+-4 -11 -3 11 1097 2986 3 MP stroke
+-3 -8 -3 8 1141 2947 3 MP stroke
+-2 -6 -2 6 1184 2907 3 MP stroke
+-1 -4 -1 4 1227 2865 3 MP stroke
+0 -1 -1 1 1271 2824 3 MP stroke
+1 0 1314 2781 2 MP stroke
+0 3 1 -3 1358 2739 3 MP stroke
+1 5 2 -5 1401 2697 3 MP stroke
+2 7 2 -7 1445 2654 3 MP stroke
+3 8 3 -8 1488 2611 3 MP stroke
+3 11 3 -11 1532 2569 3 MP stroke
+4 12 3 -12 1576 2526 3 MP stroke
+4 13 5 -13 1619 2484 3 MP stroke
+4 15 5 -15 1663 2442 3 MP stroke
+5 16 5 -16 1707 2400 3 MP stroke
+5 17 5 -17 1751 2358 3 MP stroke
+6 18 6 -18 1794 2317 3 MP stroke
+6 19 6 -19 1838 2275 3 MP stroke
+7 19 6 -19 1882 2234 3 MP stroke
+6 20 7 -20 1926 2193 3 MP stroke
+6 21 7 -21 1970 2153 3 MP stroke
+7 21 7 -21 2014 2112 3 MP stroke
+7 21 7 -21 2058 2072 3 MP stroke
+7 21 7 -21 2102 2032 3 MP stroke
+7 22 7 -22 2146 1993 3 MP stroke
+7 22 7 -22 2190 1953 3 MP stroke
+7 22 7 -22 2235 1914 3 MP stroke
+7 22 7 -22 2279 1875 3 MP stroke
+7 22 7 -22 2323 1837 3 MP stroke
+7 22 7 -22 2367 1799 3 MP stroke
+7 22 7 -22 2411 1761 3 MP stroke
+7 22 6 -22 2456 1723 3 MP stroke
+6 21 7 -21 2500 1685 3 MP stroke
+6 21 7 -21 2544 1648 3 MP stroke
+6 20 7 -20 2588 1611 3 MP stroke
+6 20 6 -20 2633 1575 3 MP stroke
+6 20 6 -20 2677 1539 3 MP stroke
+6 19 6 -19 2721 1503 3 MP stroke
+6 19 6 -19 2765 1467 3 MP stroke
+5 18 6 -18 2810 1432 3 MP stroke
+5 17 6 -17 2854 1397 3 MP stroke
+5 17 6 -17 2898 1363 3 MP stroke
+5 17 5 -17 2943 1329 3 MP stroke
+5 16 5 -16 2987 1296 3 MP stroke
+5 16 5 -16 3031 1263 3 MP stroke
+5 15 4 -15 3076 1230 3 MP stroke
+4 14 5 -14 3120 1198 3 MP stroke
+4 14 5 -14 3164 1167 3 MP stroke
+4 14 4 -14 3209 1136 3 MP stroke
+4 13 4 -13 3253 1106 3 MP stroke
+4 12 4 -12 3297 1076 3 MP stroke
+4 12 3 -12 3342 1047 3 MP stroke
+3 12 4 -12 3386 1019 3 MP stroke
+3 10 4 -10 3430 991 3 MP stroke
+3 10 3 -10 3475 964 3 MP stroke
+3 9 3 -9 3519 938 3 MP stroke
+3 9 3 -9 3563 914 3 MP stroke
+3 9 2 -9 3608 890 3 MP stroke
+3 8 2 -8 3652 867 3 MP stroke
+2 8 3 -8 3696 845 3 MP stroke
+2 7 3 -7 3740 824 3 MP stroke
+2 7 2 -7 3785 805 3 MP stroke
+2 6 2 -6 3829 787 3 MP stroke
+2 6 2 -6 3873 771 3 MP stroke
+2 5 2 -5 3917 756 3 MP stroke
+2 6 1 -6 3962 744 3 MP stroke
+1 6 2 -6 4006 733 3 MP stroke
+1 5 2 -5 4050 724 3 MP stroke
+2 5 2 -5 4094 718 3 MP stroke
+2 6 2 -6 4138 715 3 MP stroke
+2 6 2 -6 4182 715 3 MP stroke
+2 5 2 -5 4226 717 3 MP stroke
+2 6 3 -6 4270 724 3 MP stroke
+2 7 3 -7 4314 735 3 MP stroke
+2 8 3 -8 4358 751 3 MP stroke
+3 8 3 -8 4402 772 3 MP stroke
+3 10 3 -10 4446 800 3 MP stroke
+4 10 3 -10 4490 834 3 MP stroke
+4 12 3 -12 4534 878 3 MP stroke
+4 14 5 -14 4577 932 3 MP stroke
+5 16 5 -16 4621 998 3 MP stroke
+6 18 6 -18 4664 1079 3 MP stroke
+7 22 7 -22 4707 1179 3 MP stroke
+8 26 8 -26 4750 1303 3 MP stroke
+10 31 10 -31 4792 1458 3 MP stroke
+12 37 11 -37 4835 1654 3 MP stroke
+14 45 15 -45 4876 1909 3 MP stroke
+18 57 18 -57 4917 2250 3 MP stroke
+23 72 23 -72 4956 2727 3 MP stroke
+30 94 30 -94 4993 3446 3 MP stroke
+0 62 741 3103 2 MP stroke
+0 57 785 3152 2 MP stroke
+0 57 829 3140 2 MP stroke
+0 54 873 3119 2 MP stroke
+0 52 917 3093 2 MP stroke
+0 48 961 3064 2 MP stroke
+0 43 1005 3032 2 MP stroke
+0 38 1050 2999 2 MP stroke
+0 32 1094 2965 2 MP stroke
+0 25 1138 2930 2 MP stroke
+0 19 1182 2894 2 MP stroke
+0 12 1226 2857 2 MP stroke
+0 5 1270 2820 2 MP stroke
+0 -2 1314 2783 2 MP stroke
+0 -9 1359 2745 2 MP stroke
+0 -14 1403 2706 2 MP stroke
+0 -21 1447 2668 2 MP stroke
+0 -26 1491 2629 2 MP stroke
+0 -32 1535 2590 2 MP stroke
+0 -37 1579 2551 2 MP stroke
+0 -40 1624 2511 2 MP stroke
+0 -45 1668 2472 2 MP stroke
+0 -48 1712 2432 2 MP stroke
+0 -52 1756 2393 2 MP stroke
+0 -54 1800 2353 2 MP stroke
+0 -58 1844 2314 2 MP stroke
+0 -59 1888 2274 2 MP stroke
+0 -62 1933 2235 2 MP stroke
+0 -63 1977 2195 2 MP stroke
+0 -64 2021 2155 2 MP stroke
+0 -65 2065 2116 2 MP stroke
+0 -66 2109 2077 2 MP stroke
+0 -66 2153 2037 2 MP stroke
+0 -67 2197 1998 2 MP stroke
+0 -67 2242 1959 2 MP stroke
+0 -67 2286 1920 2 MP stroke
+0 -67 2330 1882 2 MP stroke
+0 -66 2374 1843 2 MP stroke
+0 -66 2418 1805 2 MP stroke
+0 -65 2462 1766 2 MP stroke
+0 -64 2507 1728 2 MP stroke
+0 -64 2551 1691 2 MP stroke
+0 -62 2595 1653 2 MP stroke
+0 -61 2639 1616 2 MP stroke
+0 -60 2683 1579 2 MP stroke
+0 -58 2727 1542 2 MP stroke
+0 -57 2771 1505 2 MP stroke
+0 -55 2816 1469 2 MP stroke
+0 -54 2860 1434 2 MP stroke
+0 -52 2904 1398 2 MP stroke
+0 -51 2948 1363 2 MP stroke
+0 -49 2992 1329 2 MP stroke
+0 -47 3036 1294 2 MP stroke
+0 -46 3080 1261 2 MP stroke
+0 -44 3125 1228 2 MP stroke
+0 -42 3169 1195 2 MP stroke
+0 -41 3213 1163 2 MP stroke
+0 -39 3257 1132 2 MP stroke
+0 -37 3301 1101 2 MP stroke
+0 -36 3345 1071 2 MP stroke
+0 -34 3390 1041 2 MP stroke
+0 -31 3434 1012 2 MP stroke
+0 -31 3478 985 2 MP stroke
+0 -29 3522 958 2 MP stroke
+0 -27 3566 932 2 MP stroke
+0 -26 3610 907 2 MP stroke
+0 -24 3654 883 2 MP stroke
+0 -23 3699 860 2 MP stroke
+0 -22 3743 839 2 MP stroke
+0 -21 3787 819 2 MP stroke
+0 -19 3831 800 2 MP stroke
+0 -19 3875 784 2 MP stroke
+0 -18 3919 769 2 MP stroke
+0 -17 3963 755 2 MP stroke
+0 -17 4008 744 2 MP stroke
+0 -17 4052 736 2 MP stroke
+0 -17 4096 730 2 MP stroke
+0 -17 4140 726 2 MP stroke
+0 -17 4184 726 2 MP stroke
+0 -18 4228 730 2 MP stroke
+0 -19 4273 737 2 MP stroke
+0 -21 4317 749 2 MP stroke
+0 -23 4361 766 2 MP stroke
+0 -25 4405 789 2 MP stroke
+0 -28 4449 818 2 MP stroke
+0 -32 4493 856 2 MP stroke
+0 -36 4537 902 2 MP stroke
+0 -42 4582 960 2 MP stroke
+0 -49 4626 1031 2 MP stroke
+0 -56 4670 1117 2 MP stroke
+0 -67 4714 1224 2 MP stroke
+0 -79 4758 1356 2 MP stroke
+0 -94 4802 1521 2 MP stroke
+0 -113 4846 1730 2 MP stroke
+0 -137 4891 2001 2 MP stroke
+0 -171 4935 2364 2 MP stroke
+0 -217 4979 2872 2 MP stroke
+0 -286 5023 3638 2 MP stroke
+/c11 { 0.000000 0.750000 0.750000 sr} bdef
+c11
+-6 20 747 3145 2 MP stroke
+-6 -25 -10 24 787 2994 3 MP stroke
+-4 -28 -14 26 827 2899 3 MP stroke
+-1 -30 -17 27 866 2812 3 MP stroke
+1 -32 -20 28 905 2729 3 MP stroke
+3 -33 -22 28 944 2648 3 MP stroke
+6 -33 -25 27 983 2569 3 MP stroke
+9 -33 -28 26 1022 2490 3 MP stroke
+12 -33 -30 25 1060 2412 3 MP stroke
+15 -33 -33 23 1099 2335 3 MP stroke
+17 -32 -34 22 1137 2258 3 MP stroke
+20 -32 -37 21 1176 2181 3 MP stroke
+24 -31 -39 19 1214 2105 3 MP stroke
+27 -30 -42 17 1253 2030 3 MP stroke
+30 -30 -44 15 1291 1955 3 MP stroke
+32 -29 -46 14 1330 1880 3 MP stroke
+35 -28 -48 12 1368 1806 3 MP stroke
+38 -28 -51 11 1407 1732 3 MP stroke
+41 -28 -53 9 1445 1659 3 MP stroke
+44 -28 -56 8 1484 1586 3 MP stroke
+46 -28 -58 7 1523 1514 3 MP stroke
+49 -28 -60 7 1561 1441 3 MP stroke
+52 -28 -63 5 1600 1370 3 MP stroke
+55 -29 -66 5 1639 1298 3 MP stroke
+58 -29 -69 4 1678 1227 3 MP stroke
+60 -30 -70 4 1716 1156 3 MP stroke
+63 -31 -73 4 1755 1085 3 MP stroke
+65 -32 -76 4 1794 1014 3 MP stroke
+68 -32 -79 3 1833 944 3 MP stroke
+71 -33 -82 3 1872 874 3 MP stroke
+72 -34 -84 3 1911 804 3 MP stroke
+75 -35 -87 3 1950 734 3 MP stroke
+77 -37 -90 4 1989 664 3 MP stroke
+80 -38 -94 4 2029 594 3 MP stroke
+82 -40 -97 5 2068 524 3 MP stroke
+84 -41 -99 5 2107 454 3 MP stroke
+86 -43 -102 6 2146 384 3 MP stroke
+3 -1 -23 1 2103 320 3 MP stroke
+0 62 741 3103 2 MP stroke
+-8 76 785 2942 2 MP stroke
+-16 83 829 2842 2 MP stroke
+-24 87 873 2752 2 MP stroke
+-32 90 917 2667 2 MP stroke
+-39 91 961 2585 2 MP stroke
+-47 91 1005 2505 2 MP stroke
+-56 89 1050 2427 2 MP stroke
+-64 87 1094 2350 2 MP stroke
+-72 85 1138 2273 2 MP stroke
+-79 82 1182 2198 2 MP stroke
+-87 79 1226 2123 2 MP stroke
+-95 75 1270 2049 2 MP stroke
+-103 71 1314 1976 2 MP stroke
+-112 68 1359 1902 2 MP stroke
+-119 65 1403 1829 2 MP stroke
+-127 61 1447 1757 2 MP stroke
+-135 59 1491 1684 2 MP stroke
+-143 56 1535 1612 2 MP stroke
+-151 54 1579 1540 2 MP stroke
+-159 53 1624 1468 2 MP stroke
+-167 52 1668 1396 2 MP stroke
+-175 51 1712 1324 2 MP stroke
+-183 51 1756 1252 2 MP stroke
+-191 51 1800 1180 2 MP stroke
+-198 51 1844 1109 2 MP stroke
+-206 52 1888 1037 2 MP stroke
+-215 53 1933 965 2 MP stroke
+-223 54 1977 893 2 MP stroke
+-231 56 2021 821 2 MP stroke
+-238 57 2065 750 2 MP stroke
+-246 59 2109 678 2 MP stroke
+-254 63 2153 605 2 MP stroke
+-262 65 2197 533 2 MP stroke
+-271 68 2242 461 2 MP stroke
+-278 70 2286 389 2 MP stroke
+-272 70 2316 320 2 MP stroke
+-5 1 2085 320 2 MP stroke
+24 w
+c10
+45 -3 44 -3 44 -2 44 -3 44 -3 44 -3 45 -3 44 -3 
+44 -4 44 -3 44 -4 44 -3 44 -4 45 -4 44 -4 44 -4 
+44 -4 44 -5 44 -4 44 -5 45 -5 44 -5 44 -5 44 -6 
+44 -5 44 -6 45 -6 44 -7 44 -6 44 -7 44 -7 44 -7 
+44 -8 45 -8 44 -8 44 -9 44 -9 44 -9 44 -10 44 -10 
+45 -11 44 -11 44 -12 44 -12 44 -13 44 -13 45 -14 44 -15 
+44 -15 44 -16 44 -17 44 -18 44 -19 45 -20 44 -20 44 -22 
+44 -23 44 -25 44 -25 44 -27 45 -29 44 -30 44 -32 44 -34 
+44 -36 44 -38 45 -40 44 -43 44 -45 44 -48 44 -51 44 -54 
+44 -57 45 -61 44 -64 44 -68 44 -72 44 -77 44 -80 44 -85 
+45 -89 44 -94 44 -97 44 -102 44 -105 44 -108 45 -111 44 -113 
+44 -113 44 -112 44 -110 44 -106 44 -100 45 -92 44 -83 44 -71 
+44 -57 44 -42 44 -26 44 -9 741 3799 101 MP stroke
+c8
+5 162 44 766 44 508 44 363 45 271 44 209 44 165 44 132 
+44 107 44 86 44 71 45 58 44 46 44 38 44 29 44 23 
+44 17 44 12 45 7 44 4 44 0 44 -4 44 -6 44 -8 
+45 -11 44 -14 44 -15 44 -16 44 -19 44 -20 44 -21 45 -23 
+44 -24 44 -25 44 -26 44 -27 44 -27 44 -29 45 -30 44 -30 
+44 -31 44 -31 44 -32 44 -33 45 -33 44 -33 44 -35 44 -34 
+44 -35 44 -36 44 -35 45 -36 44 -37 44 -37 44 -37 44 -37 
+44 -38 44 -37 45 -38 44 -39 44 -38 44 -39 44 -38 44 -39 
+45 -39 44 -39 44 -40 44 -39 44 -39 44 -40 44 -40 45 -39 
+44 -40 44 -39 44 -40 44 -39 44 -40 44 -39 45 -40 44 -39 
+44 -39 44 -39 44 -38 44 -39 45 -38 44 -37 44 -37 44 -37 
+44 -36 44 -35 44 -34 45 -33 44 -32 44 -29 44 -26 44 -21 
+44 -12 44 49 741 3103 99 MP stroke
+gr
+
+24 w
+c8
+ 705 3103 mt  777 3103 L
+ 741 3067 mt  741 3139 L
+ 749 3152 mt  821 3152 L
+ 785 3116 mt  785 3188 L
+ 793 3140 mt  865 3140 L
+ 829 3104 mt  829 3176 L
+ 837 3119 mt  909 3119 L
+ 873 3083 mt  873 3155 L
+ 881 3093 mt  953 3093 L
+ 917 3057 mt  917 3129 L
+ 925 3064 mt  997 3064 L
+ 961 3028 mt  961 3100 L
+ 969 3032 mt 1041 3032 L
+1005 2996 mt 1005 3068 L
+1014 2999 mt 1086 2999 L
+1050 2963 mt 1050 3035 L
+1058 2965 mt 1130 2965 L
+1094 2929 mt 1094 3001 L
+1102 2930 mt 1174 2930 L
+1138 2894 mt 1138 2966 L
+1146 2894 mt 1218 2894 L
+1182 2858 mt 1182 2930 L
+1190 2857 mt 1262 2857 L
+1226 2821 mt 1226 2893 L
+1234 2820 mt 1306 2820 L
+1270 2784 mt 1270 2856 L
+1278 2783 mt 1350 2783 L
+1314 2747 mt 1314 2819 L
+1323 2745 mt 1395 2745 L
+1359 2709 mt 1359 2781 L
+1367 2706 mt 1439 2706 L
+1403 2670 mt 1403 2742 L
+1411 2668 mt 1483 2668 L
+1447 2632 mt 1447 2704 L
+1455 2629 mt 1527 2629 L
+1491 2593 mt 1491 2665 L
+1499 2590 mt 1571 2590 L
+1535 2554 mt 1535 2626 L
+1543 2551 mt 1615 2551 L
+1579 2515 mt 1579 2587 L
+1588 2511 mt 1660 2511 L
+1624 2475 mt 1624 2547 L
+1632 2472 mt 1704 2472 L
+1668 2436 mt 1668 2508 L
+1676 2432 mt 1748 2432 L
+1712 2396 mt 1712 2468 L
+1720 2393 mt 1792 2393 L
+1756 2357 mt 1756 2429 L
+1764 2353 mt 1836 2353 L
+1800 2317 mt 1800 2389 L
+1808 2314 mt 1880 2314 L
+1844 2278 mt 1844 2350 L
+1852 2274 mt 1924 2274 L
+1888 2238 mt 1888 2310 L
+1897 2235 mt 1969 2235 L
+1933 2199 mt 1933 2271 L
+1941 2195 mt 2013 2195 L
+1977 2159 mt 1977 2231 L
+1985 2155 mt 2057 2155 L
+2021 2119 mt 2021 2191 L
+2029 2116 mt 2101 2116 L
+2065 2080 mt 2065 2152 L
+2073 2077 mt 2145 2077 L
+2109 2041 mt 2109 2113 L
+2117 2037 mt 2189 2037 L
+2153 2001 mt 2153 2073 L
+2161 1998 mt 2233 1998 L
+2197 1962 mt 2197 2034 L
+2206 1959 mt 2278 1959 L
+2242 1923 mt 2242 1995 L
+2250 1920 mt 2322 1920 L
+2286 1884 mt 2286 1956 L
+2294 1882 mt 2366 1882 L
+2330 1846 mt 2330 1918 L
+2338 1843 mt 2410 1843 L
+2374 1807 mt 2374 1879 L
+2382 1805 mt 2454 1805 L
+2418 1769 mt 2418 1841 L
+2426 1766 mt 2498 1766 L
+2462 1730 mt 2462 1802 L
+2471 1728 mt 2543 1728 L
+2507 1692 mt 2507 1764 L
+2515 1691 mt 2587 1691 L
+2551 1655 mt 2551 1727 L
+2559 1653 mt 2631 1653 L
+2595 1617 mt 2595 1689 L
+2603 1616 mt 2675 1616 L
+2639 1580 mt 2639 1652 L
+2647 1579 mt 2719 1579 L
+2683 1543 mt 2683 1615 L
+2691 1542 mt 2763 1542 L
+2727 1506 mt 2727 1578 L
+2735 1505 mt 2807 1505 L
+2771 1469 mt 2771 1541 L
+2780 1469 mt 2852 1469 L
+2816 1433 mt 2816 1505 L
+2824 1434 mt 2896 1434 L
+2860 1398 mt 2860 1470 L
+2868 1398 mt 2940 1398 L
+2904 1362 mt 2904 1434 L
+2912 1363 mt 2984 1363 L
+2948 1327 mt 2948 1399 L
+2956 1329 mt 3028 1329 L
+2992 1293 mt 2992 1365 L
+3000 1294 mt 3072 1294 L
+3036 1258 mt 3036 1330 L
+3044 1261 mt 3116 1261 L
+3080 1225 mt 3080 1297 L
+3089 1228 mt 3161 1228 L
+3125 1192 mt 3125 1264 L
+3133 1195 mt 3205 1195 L
+3169 1159 mt 3169 1231 L
+3177 1163 mt 3249 1163 L
+3213 1127 mt 3213 1199 L
+3221 1132 mt 3293 1132 L
+3257 1096 mt 3257 1168 L
+3265 1101 mt 3337 1101 L
+3301 1065 mt 3301 1137 L
+3309 1071 mt 3381 1071 L
+3345 1035 mt 3345 1107 L
+3354 1041 mt 3426 1041 L
+3390 1005 mt 3390 1077 L
+3398 1012 mt 3470 1012 L
+3434  976 mt 3434 1048 L
+3442  985 mt 3514  985 L
+3478  949 mt 3478 1021 L
+3486  958 mt 3558  958 L
+3522  922 mt 3522  994 L
+3530  932 mt 3602  932 L
+3566  896 mt 3566  968 L
+3574  907 mt 3646  907 L
+3610  871 mt 3610  943 L
+3618  883 mt 3690  883 L
+3654  847 mt 3654  919 L
+3663  860 mt 3735  860 L
+3699  824 mt 3699  896 L
+3707  839 mt 3779  839 L
+3743  803 mt 3743  875 L
+3751  819 mt 3823  819 L
+3787  783 mt 3787  855 L
+3795  800 mt 3867  800 L
+3831  764 mt 3831  836 L
+3839  784 mt 3911  784 L
+3875  748 mt 3875  820 L
+3883  769 mt 3955  769 L
+3919  733 mt 3919  805 L
+3927  755 mt 3999  755 L
+3963  719 mt 3963  791 L
+3972  744 mt 4044  744 L
+4008  708 mt 4008  780 L
+4016  736 mt 4088  736 L
+4052  700 mt 4052  772 L
+4060  730 mt 4132  730 L
+4096  694 mt 4096  766 L
+4104  726 mt 4176  726 L
+4140  690 mt 4140  762 L
+4148  726 mt 4220  726 L
+4184  690 mt 4184  762 L
+4192  730 mt 4264  730 L
+4228  694 mt 4228  766 L
+4237  737 mt 4309  737 L
+4273  701 mt 4273  773 L
+4281  749 mt 4353  749 L
+4317  713 mt 4317  785 L
+4325  766 mt 4397  766 L
+4361  730 mt 4361  802 L
+4369  789 mt 4441  789 L
+4405  753 mt 4405  825 L
+4413  818 mt 4485  818 L
+4449  782 mt 4449  854 L
+4457  856 mt 4529  856 L
+4493  820 mt 4493  892 L
+4501  902 mt 4573  902 L
+4537  866 mt 4537  938 L
+4546  960 mt 4618  960 L
+4582  924 mt 4582  996 L
+4590 1031 mt 4662 1031 L
+4626  995 mt 4626 1067 L
+4634 1117 mt 4706 1117 L
+4670 1081 mt 4670 1153 L
+4678 1224 mt 4750 1224 L
+4714 1188 mt 4714 1260 L
+4722 1356 mt 4794 1356 L
+4758 1320 mt 4758 1392 L
+4766 1521 mt 4838 1521 L
+4802 1485 mt 4802 1557 L
+4810 1730 mt 4882 1730 L
+4846 1694 mt 4846 1766 L
+4855 2001 mt 4927 2001 L
+4891 1965 mt 4891 2037 L
+4899 2364 mt 4971 2364 L
+4935 2328 mt 4935 2400 L
+4943 2872 mt 5015 2872 L
+4979 2836 mt 4979 2908 L
+4987 3638 mt 5059 3638 L
+5023 3602 mt 5023 3674 L
+gs 741 320 4416 3480 rc
+/c12 { 0.000000 1.000000 0.000000 sr} bdef
+c12
+42 -69 44 -72 45 -72 44 -72 44 -73 44 -72 44 -71 44 -72 
+44 -72 45 -72 44 -72 44 -71 44 -72 44 -72 44 -72 44 -72 
+45 -72 44 -72 44 -72 44 -73 44 -72 44 -73 45 -74 44 -73 
+44 -74 44 -75 44 -75 44 -77 44 -77 45 -78 44 -80 44 -82 
+44 -85 44 -90 44 -100 44 -161 741 3103 37 MP stroke
+gr
+
+c12
+  36   36  741 3103 FO
+  36   36  785 2942 FO
+  36   36  829 2842 FO
+  36   36  873 2752 FO
+  36   36  917 2667 FO
+  36   36  961 2585 FO
+  36   36 1005 2505 FO
+  36   36 1050 2427 FO
+  36   36 1094 2350 FO
+  36   36 1138 2273 FO
+  36   36 1182 2198 FO
+  36   36 1226 2123 FO
+  36   36 1270 2049 FO
+  36   36 1314 1976 FO
+  36   36 1359 1902 FO
+  36   36 1403 1829 FO
+  36   36 1447 1757 FO
+  36   36 1491 1684 FO
+  36   36 1535 1612 FO
+  36   36 1579 1540 FO
+  36   36 1624 1468 FO
+  36   36 1668 1396 FO
+  36   36 1712 1324 FO
+  36   36 1756 1252 FO
+  36   36 1800 1180 FO
+  36   36 1844 1109 FO
+  36   36 1888 1037 FO
+  36   36 1933  965 FO
+  36   36 1977  893 FO
+  36   36 2021  821 FO
+  36   36 2065  750 FO
+  36   36 2109  678 FO
+  36   36 2153  605 FO
+  36   36 2197  533 FO
+  36   36 2242  461 FO
+  36   36 2286  389 FO
+gs 741 320 4416 3480 rc
+96 w
+0 sg
+1304 2791 PD
+gr
+
+96 w
+0 sg
+  36   36 1304 2791 FO
+gs 741 320 4416 3480 rc
+gr
+
+%%IncludeResource: font Helvetica
+/Helvetica /ISOLatin1Encoding 144 FMSR
+
+2859 4105 mt 
+(dE) s
+ 419 2120 mt  -90 rotate
+(dI) s
+90 rotate
+ 670  156 mt 
+(Non-linear system: Isocline I) s
+%%IncludeResource: font Helvetica
+/Helvetica /ISOLatin1Encoding 108 FMSR
+
+2507  228 mt 
+(2) s
+%%IncludeResource: font Helvetica
+/Helvetica /ISOLatin1Encoding 144 FMSR
+
+2567  156 mt 
+( \(blue\),Isocline I) s
+%%IncludeResource: font Helvetica
+/Helvetica /ISOLatin1Encoding 108 FMSR
+
+3580  228 mt 
+(3) s
+%%IncludeResource: font Helvetica
+/Helvetica /ISOLatin1Encoding 144 FMSR
+
+3640  156 mt 
+(  \(green\), Isocline I) s
+%%IncludeResource: font Helvetica
+/Helvetica /ISOLatin1Encoding 108 FMSR
+
+4831  228 mt 
+(1) s
+%%IncludeResource: font Helvetica
+/Helvetica /ISOLatin1Encoding 144 FMSR
+
+4891  156 mt 
+( \(red\)) s
+6 w
+
+end %%Color Dict
+
+eplot
+%%EndObject
+
+epage
+end
+
+showpage
+
+%%Trailer
+%%EOF

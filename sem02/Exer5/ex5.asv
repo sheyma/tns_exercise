@@ -1,0 +1,71 @@
+
+N=30;               % number of neruons in upstream population
+M=40;               % number of neurons in downstream population
+Rmax=1;             % unitary response
+kappa=0.1;
+sigma=50;
+nu_max=1000;        % maximum value of preferred random frequency
+
+% define preferred direction for each neuron in both populations
+nupref_ran1=nu_max*rand(1,N);     %v_pref for upstream population
+nupref_ran2=nu_max*rand(1,M);     %v_pref for downstream population
+
+nu_train=1000*rand(1,12*N);
+
+
+[r1training_mean r1training_noisy] =GaussResp_LinearSTD(nu_train,nupref_ran1,Rmax,kappa);
+
+[r2training_mean r2training_noisy]=GaussResp_ConstantSTD(nu_train,nupref_ran2,Rmax,sigma);
+
+r1training_noisy(r1training_noisy<0)=0;
+r2training_noisy(r1training_noisy<0)=0;
+
+for i=1:3
+subplot(2,1,1)   
+    hold on
+    plot(nu_train, r1training_mean(:,i),'.')
+    hold off
+subplot(2,1,2)
+hold on
+plot(nu_train, r2training_mean(:,i),'.r')
+ hold off
+end
+figure;    
+for i=1:3
+    
+    
+subplot(2,1,1)   
+    hold on
+    plot(nu_train, r1training_noisy(:,i),'.')
+    hold off
+subplot(2,1,2)
+hold on
+plot(nu_train, r2training_noisy(:,i),'.r')
+ hold off
+end
+
+covariance_mean=covariance(r1training_mean,r2training_mean);
+covariance_noisy=covariance(r1training_noisy,r2training_noisy);
+
+figure;
+pcolor( covariance_mean);
+axis ('square');
+ylabel('Second Population');
+xlabel('First Population');
+
+nutest=1000*rand(1,12*N);
+[r1test_mean r1test_noisy] =GaussResp_LinearSTD(nutest,nupref_ran1,Rmax,kappa);
+
+r2test_mean=r1test_mean*covariance_mean';
+r2test_noisy=r1test_noisy*covariance_noisy';
+
+
+ sum1=0;
+ sum2=0;
+for i=1:M
+    sum1=sum1+r2test_mean(:,i)*nupref_ran2(:,i);
+    sum2=sum2+r2test_mean(:,i);
+end
+
+v_infer=(sum1./sum2)';
+    
